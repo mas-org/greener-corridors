@@ -1,0 +1,230 @@
+body {
+  margin:0;
+  padding:0;
+}
+
+a, a:hover, a:visited {
+  color: black;
+  text-decoration: none; 
+  padding-bottom: .5px; 
+  border-bottom: 1px solid black;
+  font-size: 95%;
+}
+
+mark {
+  background-color: #ffcc00;
+}
+
+.imageCredit {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 0.8em;
+  color: black;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+}
+
+#header {
+  position: relative;
+  background-color: white;
+  padding: 35px 5% 20px 5%;
+  z-index: 5;
+}
+#header h1, h2 {
+  color: black;
+  font-family:'Franklin Gothic Condensed', 'Arial Narrow', Arial, sans-serif;
+  margin: auto;
+}
+#header h1 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+#header h2 {
+  font-size: 1.3em;
+}
+#header p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 1.0em;
+  line-height: 1.3em;
+  margin-right: 33%;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  background-color: #ffcc00;
+  padding: 10px 33% 10px 5%;
+  z-index: 5;
+}
+#footer p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: .95em;
+  line-height: 1.3em;
+}
+
+/* column */
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+.left {
+  width: 75%;
+  padding: 10px 0px 10px 0px;
+}
+.right {
+  width: 25%;
+  text-align: center;
+  padding: 15px 0px 10px 0px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* container with overlay text */
+.container {
+  position: relative;
+  color: white;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  text-align: left;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* colors for legend */
+.ej {
+  color: #eab696;
+}
+.stroad {
+  color: #f35d17;
+}
+
+/*Mapbox*/
+#map {
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+/*Story*/
+#features {
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+}
+#features h1 {
+  font-family:'Franklin Gothic Condensed', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color: black;
+  margin: auto;
+}
+#features p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  margin-bottom: 0.9em;
+}
+  
+/*Style elements*/
+.hidden {
+  visibility: hidden;
+}
+  
+.centered {
+  width: 65vw;
+  margin: 0 auto;
+}
+.lefty {
+  width: 33vw;
+  margin-left: 5vw;
+  }
+.righty {
+  width: 33vw;
+  margin-left: 63vw;
+}
+.fully {
+  width: 37vw;
+  margin-left: 5vw;
+}
+  
+.light {
+  color: black;
+  background-color: white;
+}
+.dark {
+  color: white;
+  background-color: black;
+}
+  
+.step {
+  padding-bottom: 50vh;
+  /* margin-bottom: 10vh; */
+  opacity: 0.35;
+}
+.step.active {
+  opacity: 0.99;
+}
+.step div {
+  padding:  20px 30px;
+  border-radius: 5px;
+  margin: 0;
+}
+  
+@media (max-width: 600px) {
+  #features {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .column {
+    width: 100%;
+  }
+  .centered, .lefty, .righty, .fully {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  #header h1 {
+    padding-left: 10px;
+  }
+  #header h2 {
+    padding-left: 10px;
+  }
+  #header p {
+    padding-left: 10px;
+  }
+}
+  
+/*Fix issue on mobile browser where scroll breaks*/
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+  touch-action: unset;
+}
