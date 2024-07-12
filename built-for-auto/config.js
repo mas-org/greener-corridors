@@ -432,7 +432,7 @@ var config = {
       alignment: 'centered',
       hidden: false,
       chapterDiv: '<p>Like this stretch of Atlantic Avenue in Crown Heights, which is a Neighborhood Corridor because it is intended to serve consistent pedestrian destinations.</p><br>'
-      +'<img src="./images/atlantic-ave-4.jpg" alt="Person walking past cars parked on sidewalk" width=100%>'
+      +'<img src="./images/atlantic-ave-4.JPG" alt="Person walking past cars parked on sidewalk" width=100%>'
       +'<p style="font-size:smaller">Photo: Kade Van Meeteren.</p>',
       location: {
         center: [-73.95471785602062, 40.678797076834485],
