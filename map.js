@@ -163,7 +163,7 @@ map.on('load', function () {
           'interpolate',
           ['linear'],
           ['get', 'maj_ej'],
-          0, '#c0bebd', 
+          0, '#d8d8d8', 
           1, '#f35d17'],
         'fill-opacity': 0,
       }
@@ -194,9 +194,9 @@ map.on('load', function () {
           'interpolate', ['linear'], 
           ['get', 'Score'],
           1, '#b9c7c6', 
-          2, '#98a8b6',
-          3, '#7587a6',
-          4, '#526697',
+          2, '#98a4b6',
+          3, '#7882a7',
+          4, '#556197',
           5, '#2d4387'
         ],
         'fill-opacity': 0,
@@ -232,10 +232,10 @@ map.on('load', function () {
         'fill-color': [
           'interpolate', ['linear'], 
           ['get', 'Score'],
-          1, '#e5e5e4', 
-          2, '#e5e5e4',
-          3, '#7587a6',
-          4, '#526697',
+          1, 'transparent', 
+          2, 'transparent',
+          3, '#7882a7',
+          4, '#556197',
           5, '#2d4387'
         ],
         'fill-opacity': 0,
@@ -272,10 +272,10 @@ map.on('load', function () {
         'interpolate', ['linear'], 
         ['get', 'Score'],
         1, '#b9c7c6', 
-        2, '#98a8b6',
-        3, '#e5e5e4',
-        4, '#e5e5e4',
-        5, '#e5e5e4'
+        2, '#98a4b6',
+        3, 'transparent',
+        4, 'transparent',
+        5, 'transparent'
         ],
         'fill-opacity': 0,
       }
@@ -293,10 +293,10 @@ map.on('load', function () {
           'interpolate', ['linear'], 
           ['get', 'Score'],
           1, '#b5caed', 
-          2, '#a0a9d7',
-          3, '#8c87c1',
-          4, '#7b6baf',
-          5, '#684b9b',
+          2, '#a4a7d8',
+          3, '#9284c2',
+          4, '#7f62ad',
+          5, '#6b4099',
           6, '#561b84'
         ],
         'fill-opacity': 0,
@@ -329,11 +329,11 @@ map.on('load', function () {
           ['linear'],
           ['get', 'rank'],
           1, '#432371',
-          2, '#714674',
-          3, '#9F6976',
-          4, '#CC8B79',
+          2, '#754276',
+          3, '#a26479',
+          4, '#ce887b',
           5, '#FAAE7B'],
-        'line-width': 2,
+        'line-width': 3.5,
         'line-opacity': 0,
       }
     });
