@@ -22,4 +22,4 @@ We're using Github to host our Issues & Opportunities storymap series, which exp
 
 * NYS Department of Transportation (NYSDOT). (2023, October). _NYSDOT Functional Classes (14) and (16)._ Functional Class Viewer. https://gis.dot.ny.gov/html5viewer/?viewer=FC
   
-* U.S. Census Bureau. (2023, December 7). _A00001: Total Population; A09005: Means of Transportation to Work for Workers 16 Years and Over; and A10030: Housing Units by Vehicles Available._ In _Social Explorer_. Retrieved May 17, 2024 from http://old.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R13665662.
+* U.S. Census Bureau. (2023, December 7). _ACS 2022 (5-Year Estimates) Tables A00001: Total Population; A09005: Means of Transportation to Work for Workers 16 Years and Over; and A10030: Housing Units by Vehicles Available._ Social Explorer. Retrieved May 17, 2024 from http://old.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R13665662.
