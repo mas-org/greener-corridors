@@ -409,7 +409,7 @@ var config = {
         +'<img src="./images/google-street-view/streetview-boston-rd.png" alt="Cars on travel lane" width=100%>'
         +'<figcaption>Boston Road, The Bronx. Image: Google Street View, 2022.</figcaption></figure>',
       location: {
-        center: [-73.85233657704273, 40.87433615619272],
+        center: [-73.85272, 40.87401],
         zoom: 18,
         zoomSmall: 17,
       },
@@ -486,11 +486,15 @@ var config = {
           opacity: 1,
         },
       ],
-      onChapterExit: [],
+      onChapterExit: [
+        { layer: '11-dot-demand',
+          opacity: 0,
+        },
+      ],
     },
 
     { id: 'auto-17',
-      alignment: 'centered',
+      alignment: 'full',
       hidden: false,
       chapterDiv: 
       '<p class="p-center">Like this stretch of Atlantic Avenue in Crown Heights, which is a Neighborhood Corridor because it is intended to serve consistent pedestrian destinations.</p>'
@@ -499,19 +503,19 @@ var config = {
         +'<figcaption>Photo: Kade Van Meeteren.</figcaption></figure>',
       location: {
         center: [-73.95471785602062, 40.678797076834485],
-        zoom: 13,
-        zoomSmall: 10,
+        zoom: 18,
+        zoomSmall: 17,
       },
       onChapterEnter: [
         { layer: '11-dot-demand',
-          opacity: 1,
+          opacity: 0,
         },
       ],
       onChapterExit: [],
     },
 
     { id: 'auto-18',
-      alignment: 'centered',
+      alignment: 'full',
       hidden: false,
       chapterDiv: 
       '<p class="p-center">And this section of Utica Avenue in East Flatbush also has the demand factors that characterize a Neighborhood Corridor.</p>'
@@ -520,19 +524,15 @@ var config = {
         +'<figcaption>Photo: Stephen Albonesi.</figcaption></figure>',
       location: {
         center: [-73.9303791954553, 40.649747020907185],
-        zoom: 13,
-        zoomSmall: 10,
+        zoom: 18,
+        zoomSmall: 17,
       },
-      onChapterEnter: [
-        { layer: '11-dot-demand',
-          opacity: 1,
-        },
-      ],
+      onChapterEnter: [],
       onChapterExit: [],
     },
 
     { id: 'auto-19',
-      alignment: 'centered',
+      alignment: 'full',
       hidden: false,
       chapterDiv: 
       '<p class="p-center">Or in the Allerton neighborhood of the Bronx, where portions of Boston Road designated as Community Connectors can feel like taking your life into your hands.</p>'
@@ -541,8 +541,8 @@ var config = {
         +'<figcaption>Photo: Kade Van Meeteren.</figcaption></figure>',
       location: {
         center: [-73.8630203165104, 40.86528602675465],
-        zoom: 13,
-        zoomSmall: 10,
+        zoom: 18,
+        zoomSmall: 17,
       },
       onChapterEnter: [
         { layer: '02-studyArea',
@@ -551,15 +551,8 @@ var config = {
         { layer: '03-eja',
           opacity: 0,
         },
-        { layer: '11-dot-demand',
-          opacity: 1,
-        }
       ],
-      onChapterExit: [
-        { layer: '11-dot-demand',
-          opacity: 0,
-        }
-      ],
+      onChapterExit: [],
     },
     
     { id: 'auto-20',
@@ -579,9 +572,6 @@ var config = {
         { layer: '03-eja',
           opacity: .45,
         },
-        { layer: '11-dot-demand',
-          opacity: 0,
-        }
       ],
       onChapterExit: [],
     },
