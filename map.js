@@ -269,13 +269,13 @@ map.on('load', function () {
       type: 'fill',
       paint: {
         'fill-color': [
-        'interpolate', ['linear'], 
-        ['get', 'Score'],
-        1, '#b9c7c6', 
-        2, '#98a4b6',
-        3, 'transparent',
-        4, 'transparent',
-        5, 'transparent'
+          'interpolate', ['linear'], 
+          ['get', 'Score'],
+          1, '#b9c7c6', 
+          2, '#98a4b6',
+          3, 'transparent',
+          4, 'transparent',
+          5, 'transparent'
         ],
         'fill-opacity': 0,
       }
@@ -337,6 +337,98 @@ map.on('load', function () {
         'line-opacity': 0,
       }
     });
+
+  map.addLayer(
+    { id: '12-oti-canopy',
+      source: {
+        type: 'geojson',
+        data: './data/oti_treeCanopy_studyArea.geojson',
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': '#008000',
+        'fill-opacity': 0,
+      }
+    });
+  
+  map.addLayer(
+    { id: '13-heat-map',
+      source:  {
+        type: 'geojson',
+        data: './data/nycc_heatmap.geojson',
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': [
+          'interpolate', ['linear'], 
+          ['get', 'gridcode'],
+          -8, '#B2A7D2', 
+          -7, '#B5BAFC',
+          -6, '#B3C9FD',
+          -5, '#B0DAFD',
+          -4, '#ACEAFE',
+          -3, '#A7F9FD',
+          -2, '#B2FCF6', 
+          -1, '#C4FDE6',
+          0, '#D4FED6',
+          1, '#E3FEC6',
+          2, '#EEFEB5',
+          3, '#F8FAAB',
+          4, '#FBECAB',
+          5, '#FCDCAA',
+          6, '#FCCDAA',
+          7, '#FCBCAA',
+          8, '#FCACAA',
+          ],
+        'fill-opacity': 0,
+      }
+    }, '02-studyArea');
+  
+  map.addLayer(
+    { id: '14-hot',
+      source:  {
+        type: 'geojson',
+        data: './data/nycc_heatmap.geojson',
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': [
+          'interpolate', ['linear'], 
+          ['get', 'gridcode'],
+          -8, 'transparent', 
+          -7, 'transparent',
+          -6, 'transparent',
+          -5, 'transparent',
+          -4, 'transparent',
+          -3, 'transparent',
+          -2, 'transparent', 
+          -1, 'transparent',
+          0, 'transparent',
+          1, 'transparent',
+          2, 'transparent',
+          3, '#F8FAAB',
+          4, '#FBECAB',
+          5, '#FCDCAA',
+          6, '#FCCDAA',
+          7, '#FCBCAA',
+          8, '#FCACAA',
+        ],
+        'fill-opacity': 0,
+      }
+    }, '02-studyArea', '14-stroads-hot');
+  
+  map.addLayer(
+    { id: '15-stroads-hot',
+      source: {
+        type: 'geojson',
+        data: './data/stroads_hot.geojson',
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': '#630330',
+        'fill-opacity': 0,
+      }
+    });  
     
   scroller
     .setup({
