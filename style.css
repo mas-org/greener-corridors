@@ -38,6 +38,9 @@ a, a:hover, a:visited {
 .p-wide {
   padding: 0 5%;
 }
+.p-narrow {
+  margin-right: 33%;
+}
 
 dl, dt, dd {
   font-family: 'Libre Franklin', sans-serif;
@@ -73,6 +76,10 @@ mark {
   z-index: 5;
 }
 
+#body {
+  padding: 10px 5% 10px 5%;
+}
+
 #footer {
   position: relative;
   width: 100%;
@@ -87,16 +94,8 @@ mark {
 }
 .column {
   float: left;
-  width: 10%;
-}
-.left {
-  width: 75%;
-  padding: 10px 0px 10px 0px;
-}
-.right {
-  width: 25%;
-  text-align: center;
-  padding: 15px 0px 10px 0px;
+  width: auto;
+  padding-right: 10px;
 }
 .row:after {
   content: "";
