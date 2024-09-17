@@ -342,7 +342,7 @@ map.on('load', function () {
     { id: '12-oti-canopy',
       source: {
         type: 'geojson',
-        data: './data/oti_treeCanopy_studyArea.geojson',
+        data: './data/oti_treeCanopy.geojson',
       },
       type: 'fill',
       paint: {
@@ -404,8 +404,8 @@ map.on('load', function () {
           -2, 'transparent', 
           -1, 'transparent',
           0, 'transparent',
-          1, 'transparent',
-          2, 'transparent',
+          1, '#E3FEC6',
+          2, '#EEFEB5',
           3, '#F8FAAB',
           4, '#FBECAB',
           5, '#FCDCAA',
@@ -415,20 +415,7 @@ map.on('load', function () {
         ],
         'fill-opacity': 0,
       }
-    }, '02-studyArea', '14-stroads-hot');
-  
-  map.addLayer(
-    { id: '15-stroads-hot',
-      source: {
-        type: 'geojson',
-        data: './data/stroads_hot.geojson',
-      },
-      type: 'fill',
-      paint: {
-        'fill-color': '#630330',
-        'fill-opacity': 0,
-      }
-    });  
+    }, '02-studyArea');
     
   scroller
     .setup({
