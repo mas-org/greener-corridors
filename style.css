@@ -63,6 +63,7 @@ figure {
 img {
   vertical-align: bottom;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 mark {
@@ -96,6 +97,10 @@ mark {
   float: left;
   width: auto;
   padding-right: 10px;
+}
+.column-grid {
+  float: left;
+  width: 50%;
 }
 .row:after {
   content: "";
@@ -201,6 +206,9 @@ mark {
     margin: 0 auto;
   }
   .column {
+    width: 100%;
+  }
+  .column-grid {
     width: 100%;
   }
   .centered, .lefty, .righty, .fully {

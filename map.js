@@ -416,7 +416,103 @@ map.on('load', function () {
         'fill-opacity': 0,
       }
     }, '02-studyArea');
-    
+
+  map.addLayer(
+    { id: '15-high-tide',
+      source: {
+        type: 'geojson',
+        data: './data/dep_extreme_flooding/future-high-tide.geojson'
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': '#004C73',
+        'fill-opacity': 0,
+      }
+    });
+
+  map.addLayer(
+    { id: '16-deep',
+      source: {
+        type: 'geojson',
+        data: './data/dep_extreme_flooding/deep-flooding.geojson'
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': '#00A9E6',
+        'fill-opacity': 0,
+      }
+    });
+
+  map.addLayer(
+    { id: '17-nuisance1',
+      source: {
+        type: 'geojson',
+        data: './data/dep_extreme_flooding/nuisance1.geojson'
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': '#73DFFF',
+        'fill-opacity': 0,
+      }
+    });
+
+  map.addLayer(
+    { id: '18-nuisance2',
+      source: {
+        type: 'geojson',
+        data: './data/dep_extreme_flooding/nuisance2.geojson'
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': '#73DFFF',
+        'fill-opacity': 0,
+      }
+    });
+
+  map.addLayer(
+    { id: '19-canopy1',
+      source: {
+        type: 'geojson',
+        data: './data/oti_treeCanopy/tree-canopy1.geojson'
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': '#008000',
+        'fill-opacity': 0,
+      }
+    });
+
+  map.addLayer(
+    { id: '20-canopy2',
+      source: {
+        type: 'geojson',
+        data: './data/oti_treeCanopy/tree-canopy2.geojson'
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': '#008000',
+        'fill-opacity': 0,
+      }
+    });
+
+  map.addLayer(
+    { id: '21-stroads-flood',
+      source: {
+        type: 'geojson',
+        data: '../data/stroads.geojson',
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': [
+          'case',
+          ['==', ['get', 'pct_flood_20'], null],
+          'transparent',
+          ['step', ['get', 'pct_flood_20'], 'transparent', 1, '#f35d17'],
+        ],
+        'fill-opacity': 0,
+      }
+    }); 
+
   scroller
     .setup({
       step: '.step',
