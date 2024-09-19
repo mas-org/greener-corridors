@@ -35,11 +35,11 @@ var config = {
       hidden: false,
       chapterDiv: 
       '<p>With climate change, cities are encountering a phenomenon called the “urban heat island” effect with greater intensity, wherein the urban environment experiences hotter temperatures than outlying areas. The difference largely stems from the concentration of manmade surfaces in cities, like concrete, asphalt, and brick, that absorb and retain heat.</p>'
-      +'<p>According to a 2023 <a href="https://www.climatecentral.org/climate-matters/urban-heat-islands-2023" target="_blank">report by  Climate Central</a>, New York City has the greatest urban heat island effect of any major U.S. city, with temperatures nearly 10 degrees hotter for the average resident than they would otherwise be. Residents of New York City’s environmental justice (EJ) areas, the focus of our study, are more likely to experience socioeconomic, health, and environmental disparities, including limited access to green space and climate-controlled spaces, that make them more vulnerable to extreme heat. According to the <a href="https://climate.cityofnewyork.us/topic/environmental-justice/" target="_blank">Mayor’s Office of Climate & Environmental Justice</a>, for example, nine of the top ten neighborhoods in New York with the lowest rates of air conditioning at home are EJ neighborhoods. The result is that <a href="https://a816-dohbesp.nyc.gov/IndicatorPublic/data-stories/urban-heat-island/" target="_blank">more people die from extreme heat</a> in New York City than from all other natural disasters combined.</p>'
+      +'<p>According to a 2023 <a href="https://www.climatecentral.org/climate-matters/urban-heat-islands-2023" target="_blank">report by  Climate Central</a>, New York City has the greatest urban heat island effect of any major U.S. city, with temperatures nearly 10 degrees hotter for the average resident than they would otherwise be. Residents of New York City’s environmental justice (EJ) areas, the focus of our study, are more likely to experience socioeconomic, health, and environmental disparities, including limited access to green space and climate-controlled spaces, that make them more vulnerable to extreme heat. According to the <a href="https://climate.cityofnewyork.us/ht/ejnyc-report/the-state-of-environmental-justice-in-nyc/exposure-to-climate-change/" target="_blank">Mayor’s Office of Climate & Environmental Justice</a>, for example, nine of the top ten neighborhoods in New York with the lowest rates of air conditioning at home are EJ neighborhoods. The result is that <a href="https://a816-dohbesp.nyc.gov/IndicatorPublic/data-stories/urban-heat-island/" target="_blank">more people die from extreme heat</a> in New York City than from all other natural disasters combined.</p>'
       +'<p>As we will explore in this post, New York City’s stroads (especially those in EJ areas) have the potential to be a major component of the city’s climate strategy, including heat mitigation.</p>'
       +'<figure>'
         +'<img src="./images/utica-ave-3.jpg" alt="Person walking down wide sidewalk between parking lot and empty road with no street furnishings except pole and hydrant">'
-        +'<figcaption>Looking south on a warm summer day, one might mistake Utica Avenue’s single-story, treeless horizon for an arterial in the desert. Photo: Kade Van Meeteren.</figcaption></figure>'
+        +'<figcaption>Looking south on a warm summer day, one might mistake Utica Avenue’s near treeless landscape for a road through the desert. Photo: Kade Van Meeteren.</figcaption></figure>'
       +'<br><p style="text-align:center;font-size:smaller"><em>Scroll to continue</em> ▼</p>',
       location: {
         center: [-74, 40.73800],
@@ -64,9 +64,9 @@ var config = {
       alignment: "left",
       hidden: false,
       chapterDiv: 
-      '<p>The New York City Council Data Team’s <a href="<a href="https://council.nyc.gov/data/heat/" target="_blank">2023 Heat Map</a> (reproduced here) underscores the outsized influence that land use can have on surface temperatures. New York City’s vast airports and industrial areas of East Williamsburg, Hunts Point, Long Island City, Sunset Park, and other neighborhoods have relatively hotter surface temperatures than the rest of the city. These areas generate and retain significant heat because they are heavily impervious and have fewer trees and other vegetation, which are not required by manufacturing zoning. On the other hand, parks and other open spaces that have significant vegetation and tree canopy coverage are physically cooler.</p>'
-      +'<br><dl><dt><strong>Legend</strong></dt>'
-        +'<dd>Relative Average Temperature* [-8&deg;F to +8&deg;F]:<br><svg height="14" width="50%"><defs><linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%"><stop offset="0%" stop-color="#B2A7D2" /><stop offset="50%" stop-color="#D4FED6" /><stop offset="100%" stop-color="#FCACAA" /></linearGradient></defs><rect width="100%" height="100%" clip-path="url(#clip)" fill="url(#grad1)"/></svg><br><br>*For example, the surface temperatures of areas colored red on the map were approximately 8&deg;F hotter than the citywide average.</dd></dl>',
+      '<p>The New York City Council Data Team’s <a href="https://council.nyc.gov/data/heat/" target="_blank">2023 Heat Map</a> (reproduced here) underscores the outsized influence that land use can have on surface temperatures. New York City’s vast airports and industrial areas of East Williamsburg, Hunts Point, Long Island City, Sunset Park, and other neighborhoods have relatively hotter surface temperatures than the rest of the city. These areas generate and retain significant heat because they are heavily impervious and have fewer trees and other vegetation, which are not required by manufacturing zoning. On the other hand, parks and other open spaces that have significant vegetation and tree canopy coverage are physically cooler.</p>'
+      +'<br><dl><dt><strong>Legend: Relative Surface Temperature Compared with the Citywide Average</strong></dt>'
+        +'<dd><svg height="14" width="50%"><defs><linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%"><stop offset="0%" stop-color="#B2A7D2" /><stop offset="50%" stop-color="#D4FED6" /><stop offset="100%" stop-color="#FCACAA" /></linearGradient></defs><rect width="100%" height="100%" clip-path="url(#clip)" fill="url(#grad1)"/></svg><br>[-8&deg;F to +8&deg;F]</dd></dl>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.2,
@@ -118,8 +118,10 @@ var config = {
       alignment: 'full',
       hidden: false,
       chapterDiv: 
-      '<p>[IMAGE]</p>'
-      +'<p>Perhaps nowhere is this more apparent than in Jamaica, where Jamaica Avenue, Liberty Avenue, Merrick Boulevard, and several other stroads go through an area that is more than five degrees hotter on average than the rest of the city. The stroads cluster around Downtown Jamaica, a dense commercial center that is New York City’s busiest bus hub and the convergence of subway, Long Island Rail Road, and JFK Air Trains. Whereas Jamaica Avenue is primarily a commercial corridor with one and two-story shops and the occasional office tower, Liberty Boulevard is home to single-story warehouses, auto repair businesses, parking lots, and vacant land. Merrick Boulevard is more of a mix of the two.</p>',
+      '<p>Perhaps nowhere is this more apparent than in Jamaica, where Jamaica Avenue, Liberty Avenue, Merrick Boulevard, and several other stroads go through an area that is more than five degrees hotter on average than the rest of the city. The stroads cluster around Downtown Jamaica, a dense commercial center that is New York City’s busiest bus hub and the convergence of subway, Long Island Rail Road, and JFK Air Trains. Whereas Jamaica Avenue is primarily a commercial corridor with one and two-story shops and the occasional office tower, Liberty Avenue is home to single-story warehouses, auto repair businesses, parking lots, and vacant land. Merrick Boulevard is more of a mix of the two.</p>'
+       +'<p>[IMAGE - Jamaica Ave]</p>'
+      +'<p>[IMAGE - Liberty Ave]</p>'
+      +'<p>[IMAGE - Merrick Blvd]</p>',
       location: {
         center: [-73.80246, 40.69182],
         zoom: 13,
@@ -158,16 +160,34 @@ var config = {
       onChapterExit: [],
     },
 
-    { id: "env-06",
+    { id: 'env-06',
+      alignment: 'full',
+      hidden: false,
+      chapterDiv: 
+      '<figure>'
+        +'<img src="./images/northern-blvd-1.jpg" alt="Road with three lanes each way and car dealerships on either side."><br><br>'
+        +'<img src="./images/northern-blvd-2.jpg" alt="Road with three lanes each way, with one bus lane, and buildings on either side.">'
+        +'<figcaption>Photos: Kade Van Meeteren.</figcaption></figure>'
+      +'<p>Located just two miles apart along Northern Boulevard, these images of the same 95-foot right-of-way demonstrate the difference that trees, road diets, building densities, and land uses play in terms of the arterial experience.</p>',
+      location: {
+        center: [-73.90399, 40.75359],
+        zoom: 16,
+        zoomSmall: 15,
+      },
+      onChapterEnter: [],
+      onChapterExit: [],
+    },
+
+    { id: "env-07",
       alignment: "centered",
       hidden: false,
       chapterDiv:
-      '<p>As Jane Jacobs observed in The Death and Life of Great American Cities, the scale of buildings and the types of uses on a block have a major impact on the pedestrian experience. She noted that single use areas became “border vacuums,” deadened places that form barriers and create "blighted" zones in surrounding blocks. Automobile-centric land uses are the epitome, though their microclimates (like physical heat and pollution) can have the same deleterious effect in terms of individual street avoidance.</p>'
+      '<p>As Jane Jacobs observed in <i>The Death and Life of Great American Cities</i>, the scale of buildings and the types of uses on a block have a major impact on the pedestrian experience. She noted that single use areas became “border vacuums,” deadened places that form barriers and create "blighted" zones in surrounding blocks. Automobile-centric land uses are the epitome, though their microclimates (like physical heat and pollution) can have the same deleterious effect in terms of street avoidance.</p>'
       +'<p>Unfortunately, most people must encounter stroads because they are major transportation corridors and local and big box shopping destinations. A 2024 <a href="https://projects.transalt.org/new-york-city-bus-urban-heat" target="_blank">study by Transportation Alternatives</a> identified 100 of New York City’s hottest bus stops, where average temperatures are up to 14.5 degrees warmer than the coolest bus stops. A quarter of them are located along 11 stroads within the city’s EJ areas: Springfield Boulevard in Queens; Kings Highway, Norstrand Avenue, and Utica Avenue in Brooklyn; and Edgewater Road, East 138th Street, 233rd Street, Eastchester Road, Grand Concourse, Webster Avenue, and Westchester Avenue in the Bronx.</p>'
       +'<p>Heat then, has a major impact on people’s lived experiences when it comes to these spaces. In places like Jamaica, where the City is leading an effort with the community to rezone several arterial corridors, there is an imperative to utilize the neighborhood’s tangle of stroads as a key solution to urban heat.</p>'
       +'<figure>'
         +'<img src="./images/jamaica-2.jpg" alt="Archer Avenue bus lanes">'
-        +'<figcaption>Downtown Jamaica has more than 45 different bus routes along corridors like Archer Avenue. Photo: Rawnak Zaman.</figcaption></figure>',
+        +'<figcaption>Downtown Jamaica has more than 45 different bus routes along corridors like Archer Avenue where heat is omnipresent. Photo: Rawnak Zaman.</figcaption></figure>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
@@ -194,7 +214,7 @@ var config = {
       ],
     },
 
-    { id: 'env-07',
+    { id: 'env-08',
       alignment: 'left',
       hidden: false,
       chapterDiv: 
@@ -226,20 +246,20 @@ var config = {
       onChapterExit: [],
     },
 
-    { id: 'env-08',
+    { id: 'env-09',
       alignment: 'left',
       hidden: false,
       chapterDiv: 
-      '<p>Projections of where stormwater flooding will occur aligns with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors. Roughly 80% of Neptune and Surf Avenues would be underwater in an extreme stormwater flood, for example.</p>'
+      '<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors. Roughly 80% of Neptune and Surf Avenues would be underwater in an extreme stormwater flood, for example.</p>'
       +'<br><dl><dt><strong>Legend: Extreme Stormwater Flooding Scenario with 2080s Sea Level Rise (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</strong></dt>'        
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Nuisance Flooding</dd>'
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Deep & Contiguous Flooding</dd>'
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#004C73" /></svg>Future High Tides</dd>'
         +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads where at least 20% of right of way is affected in extreme scenarios</dd></dl>',
       location: {
-        center: [-74, 40.73800],
-        zoom: 10.3,
-        zoomSmall: 7.25,
+        center: [-74.00316, 40.70554],
+        zoom: 11,
+        zoomSmall: 8,
       },
       onChapterEnter: [
         { layer: '15-high-tide',
@@ -265,12 +285,29 @@ var config = {
       ],
     },
     
-    { id: 'env-09',
+    { id: 'env-10',
+      alignment: 'centered',
+      hidden: false,
+      chapterDiv: 
+      '<p>The stakes are particularly high for stroads because they are such important transportation corridors. Highly trafficked stroads and large surface parking areas generate significant amounts of pollutants (such as metals, hydrocarbons, bacteria, and excess sediments) that run off and pollute the region’s water bodies because they are unable to be absorbed into impermeable ground. The impact is amplified in New York City, where the right-of-way comprises roughly 28 percent of all combined sewer overflow drainage areas, more area than any other type of City-managed land.</p>'
+      +'<figure>'
+        +'<img src="./images/wikimedia-flatbush-ave.jpg" alt="Cars navigate completely flooded road near Prospect Park.">'
+        +'<figcaption>Flatbush Avenue was inundated with floodwater caused by Tropical Storm Ophelia in 2023. Photo: Wikimedia Commons, Wil540 art.</figcaption></figure>',
+      location: {
+        center: [-74, 40.73800],
+        zoom: 10.3,
+        zoomSmall: 7.25,
+      },
+      onChapterEnter: [],
+      onChapterExit: [],
+    },
+
+    { id: 'env-11',
       alignment: 'centered',
       hidden: false,
       chapterDiv: 
       '<p>The City has been installing cloudburst infrastructure in areas that are within priority sewer sheds, socially vulnerable neighborhoods, and where interagency infrastructure projects and ecological connectivity priorities align. Green infrastructure tends to be clustered in certain geographic areas rather than equally dispersed throughout the city or along certain corridors. According to the Department of Environmental Protection, about 90 percent of green infrastructure has been installed in environmental justice neighborhoods.</p>'
-      +'<p>[IMAGE]</p>',
+      +'<p>Nevertheless, there are places where the City has taken a corridor approach to green infrastructure investment. <mark>[Example]</mark></p>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
@@ -297,42 +334,15 @@ var config = {
       ],
     },
 
-    { id: 'env-10',
-      alignment: 'full',
-      hidden: false,
-      chapterDiv: 
-      '<p>Highly trafficked streets and large surface parking areas also generate significant amounts of pollutants (such as metals, hydrocarbons, bacteria, and excess sediments) that run off and pollute the region’s water bodies because they are unable to be absorbed into the ground. The impact is amplified in New York City, where the right-of-way comprises roughly 28 percent of all combined sewer overflow drainage areas, more area than any other type of City-managed land.</p>',
-      location: {
-        center: [-73.74489, 40.69316],
-        zoom: 15,
-        zoomSmall: 13,
-      },
-      onChapterEnter: [
-        { layer: '02-studyArea',
-          opacity: 1,
-        },
-        { layer: '16-deep',
-          opacity: .65,
-        },
-        { layer: '17-nuisance1',
-          opacity: .65,
-        },
-      ],
-      onChapterExit: [
-        { layer: '16-deep',
-          opacity: 0,
-        },
-        { layer: '17-nuisance1',
-          opacity: 0,
-        },
-      ],
-    },
-
-    { id: 'env-11',
+    { id: 'env-12',
       alignment: 'centered',
       hidden: false,
       chapterDiv: 
-      '<p>Addressing heat and flooding along New York City’s stroads can only be accomplished by taking a literal approach to the word “greener.” That is, rapidly increasing the volume of trees and other plants that soak up stormwater, alleviate heat through transpiration and shade, and provide a host of other environmental, economic, and public health benefits. In total, the New York City <a href=""https://www.nyc.gov/html/mancb3/downloads/resources/NYC Street Tree Overview.pdf" target="_blank">Department of Parks and Recreation estimates</a> that trees provide $5.60 in benefits for every dollar spent on tree planting and care.</p>',
+      '<p>Addressing heat and flooding along New York City’s stroads can only be accomplished by taking a literal approach to the word “greener.” That is, rapidly increasing the volume of trees and other plants that soak up stormwater, alleviate heat through transpiration and shade, and provide a host of other environmental, economic, and public health benefits. In total, the New York City <a href=""https://www.nyc.gov/html/mancb3/downloads/resources/NYC Street Tree Overview.pdf" target="_blank">Department of Parks and Recreation estimates</a> that trees provide $5.60 in value for every dollar spent on tree planting and care.</p>'
+      +'<p>Yet New York City has less than one tree for each of its 8.3 million residents, according to a recent <a href="https://www.nature.org/content/dam/tnc/nature/en/documents/State-of-the-Urban-Forest-NYC.pdf" target="_blank">Nature Conservancy report</a>. Only <a href="https://storymaps.arcgis.com/stories/5353de3dea91420faaa7faff0b32206b" target="_blank">22 percent</a> of New York City’s land area is covered by tree canopy and 15 percent of it is located within walking distance of stroads that cut through EJ neighborhoods.</p>'
+      +'<figure>'
+        +'<img src="./images/utica-ave-4.jpg" alt="Vegetated space with self storage facility in background">'
+        +'<figcaption>A greenstreet installation at the intersection of Empire Boulevard and Utica Avenue. Photo: Stephen Albonesi.</figcaption></figure>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
@@ -342,11 +352,11 @@ var config = {
       onChapterExit: [],
     },
 
-    { id: "env-12",
+    { id: "env-13",
       alignment: "left",
       hidden: false,
-      chapterDiv: 
-      '<p>Yet New York City has less than one tree for each of its 8.3 million residents, according to a recent <a href="https://www.nature.org/content/dam/tnc/nature/en/documents/State-of-the-Urban-Forest-NYC.pdf" target="_blank">Nature Conservancy report</a>. Only <a href="https://storymaps.arcgis.com/stories/5353de3dea91420faaa7faff0b32206b" target="_blank">22 percent</a> of New York City’s land area is covered by tree canopy and 15 percent of it is located within walking distance of stroads that cut through EJ neighborhoods.</p>'
+      chapterDiv:
+      '<p>There are dozens of stroads that extend for miles in each borough with little tree canopy, such as Boston Road, Queens Boulevard, and Utica Avenue. In areas like East Flatbush, which lacks tree canopy compared with other neighborhoods, the absence of vegetation along streets like Utica Avenue has a greater local impact. Taking a closer look at two examples helps illustrate these disparities.</p>'
       +'<br><br><dl><dt><strong>Legend</strong></dt>'
         +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads in Environmental Justice (EJ) Study Area</dd>'
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Study Area</dd></dl>',
@@ -366,7 +376,7 @@ var config = {
       onChapterExit: [],
     },
 
-    { id: "env-13",
+    { id: "env-14",
       alignment: "full",
       hidden: false,
       chapterDiv: 
@@ -380,7 +390,7 @@ var config = {
       onChapterExit: []
     },
 
-    { id: "env-14",
+    { id: "env-15",
       alignment: "full",
       hidden: false,
       chapterDiv: 
@@ -394,7 +404,7 @@ var config = {
       onChapterExit: [],
     },
 
-    { id: "env-15",
+    { id: "env-16",
       alignment: "full",
       hidden: false,
       chapterDiv: 
@@ -409,7 +419,7 @@ var config = {
       onChapterExit: [],
     },
 
-    { id: 'env-16',
+    { id: 'env-17',
       alignment: 'centered',
       hidden: false,
       chapterDiv: 
@@ -426,7 +436,7 @@ var config = {
       onChapterExit: [],
     },
 
-    { id: 'env-17',
+    { id: 'env-18',
       alignment: 'centered',
       hidden: false,
       chapterDiv: 
@@ -446,7 +456,7 @@ var config = {
       onChapterExit: [],
     },
 
-    { id: 'env-18',
+    { id: 'env-19',
       alignment: 'center',
       hidden: false,
       chapterDiv: 
