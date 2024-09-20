@@ -470,7 +470,7 @@ map.on('load', function () {
     });
 
   map.addLayer(
-    { id: '19-canopy1',
+    { id: '19-canopy',
       source: {
         type: 'geojson',
         data: './data/oti_treeCanopy/tree-canopy1.geojson'
@@ -483,20 +483,7 @@ map.on('load', function () {
     });
 
   map.addLayer(
-    { id: '20-canopy2',
-      source: {
-        type: 'geojson',
-        data: './data/oti_treeCanopy/tree-canopy2.geojson'
-      },
-      type: 'fill',
-      paint: {
-        'fill-color': '#008000',
-        'fill-opacity': 0,
-      }
-    });
-
-  map.addLayer(
-    { id: '21-stroads-flood',
+    { id: '20-stroads-flood',
       source: {
         type: 'geojson',
         data: '../data/stroads.geojson',

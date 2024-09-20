@@ -274,12 +274,12 @@ var config = {
         { layer: '18-nuisance2',
           opacity: 1,
         },
-        { layer: '21-stroads-flood',
+        { layer: '20-stroads-flood',
           opacity: 1,
         },
       ],
       onChapterExit: [
-        { layer: '21-stroads-flood',
+        { layer: '20-stroads-flood',
           opacity: 0,
         },
       ],
@@ -353,26 +353,16 @@ var config = {
     },
 
     { id: "env-13",
-      alignment: "left",
+      alignment: "centered",
       hidden: false,
       chapterDiv:
-      '<p>There are dozens of stroads that extend for miles in each borough with little tree canopy, such as Boston Road, Queens Boulevard, and Utica Avenue. In areas like East Flatbush, which lacks tree canopy compared with other neighborhoods, the absence of vegetation along streets like Utica Avenue has a greater local impact. Taking a closer look at two examples helps illustrate these disparities.</p>'
-      +'<br><br><dl><dt><strong>Legend</strong></dt>'
-        +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads in Environmental Justice (EJ) Study Area</dd>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Study Area</dd></dl>',
+      '<p class="p-wide">There are dozens of stroads that extend for miles in each borough with little tree canopy, such as Boston Road, Queens Boulevard, and Utica Avenue. In areas like East Flatbush, which lacks tree canopy compared with other neighborhoods, the absence of vegetation along streets like Utica Avenue has a greater local impact. Taking a closer look at two examples helps illustrate these disparities.</p>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
         zoomSmall: 7,
       },
-      onChapterEnter: [
-        { layer: '19-canopy1',
-          opacity: 1,
-        },
-        { layer: '20-canopy2',
-          opacity: 1,
-        },
-      ],
+      onChapterEnter: [],
       onChapterExit: [],
     },
 
@@ -380,11 +370,17 @@ var config = {
       alignment: "full",
       hidden: false,
       chapterDiv: 
-      '<p>[Zoom in]</p>',
+      '<figure>'
+        +'<img src="./images/linden-blvd.png" alt="Three lane road sandwiched by plain medians with no furnishing">'
+        +'<figcaption>Linden Boulevard. Photo: Google Street View, 2022.</figcaption></figure>'
+      +'<p>Linden Boulevard stretches nearly four miles between Ozone Park, Queens and Flatbush, Brooklyn, near the southeast corner of Prospect Park. The highly trafficked thoroughfare primarily goes through lower-income residential areas, and while the western portion narrows to two-lane traffic, the bulk of the thoroughfare consists of 10 combined travel and parking lanes separated by three medians. Where it cuts through East New York, one of the city’s poorest neighborhoods, the corridor area experiences significantly higher than average surface temperatures and flooding issues.</p>'
+      +'<p>Yet Linden Boulevard’s “sidewalk furnishing zone,” a portion of the sidewalk where most street trees are planted, only contains sporadic trees. The same is true of the corridor’s bare medians, whose total concrete width spans nearly 30 feet in some sections.</p>'
+      +'<br><br><dl><dt><strong>Legend</strong></dt>'
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Study Area</dd></dl>',
       location: {
-        center: [-74, 40.73800],
-        zoom: 10.3,
-        zoomSmall: 7,
+        center: [-73.9159502, 40.6541879],
+        zoom: 16,
+        zoomSmall: 15,
       },
       onChapterEnter: [],
       onChapterExit: []
@@ -394,26 +390,33 @@ var config = {
       alignment: "full",
       hidden: false,
       chapterDiv: 
-      '<p>The “sidewalk furnishing zone,” a portion of the sidewalk where most street trees are planted, only contains sporadic trees, even in residential and commercial areas where they are mandated by zoning. <mark>The same is true of the corridor’s medians, whose total concrete width spans more than [width] feet in some sections.</mark></p>',
+      '<figure>'
+        +'<img src="./images/eastern-pkwy.png" alt="Verdant roadway">'
+        +'<figcaption>Eastern Parkway between Bedford and Franklin Avenues. In 2024, the block was named second greenest in Brooklyn by the Brooklyn Botanic Garden. Photo: Google Street View, 2022.</figcaption></figure>'
+      +'<p>Eastern Parkway, located just one mile south, is a completely different story despite handling virtually the same amount of traffic as Linden Boulevard. Designed by Frederick Law Olmstead and Calvert Vaux in the late-1800’s to connect Brooklyn neighborhoods to Prospect Park, the three-mile, primarily residential corridor features incredibly lush tree-lined medians, bike paths, and benches that are popular for gathering. While the right of way is up to 40 feet wider than Linden Boulevard, its roadbed, sidewalks, and adjacent land have more than five times as much tree canopy coverage and much lower surface temperatures. And all of this rests above two of the busiest subway lines in the city.</p>'
+      +'<br><br><dl><dt><strong>Legend</strong></dt>'
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Study Area</dd></dl>',
       location: {
-        center: [-74, 40.73800],
-        zoom: 10.3,
-        zoomSmall: 7,
+        center: [-73.9562715, 40.6700859],
+        zoom: 16,
+        zoomSmall: 15,
       },
       onChapterEnter: [],
       onChapterExit: [],
     },
 
-    { id: "env-16",
-      alignment: "full",
+    { id: 'env-16',
+      alignment: 'centered',
       hidden: false,
       chapterDiv: 
-      '<p>[Zoom in]</p>'
-      +'<p></p>',
+      '<p>The need to work around restrictive siting constraints undoubtedly explains the lack of vegetation in some areas. For example, the New York City Department of Parks and Recreation stipulates that street trees must be planted a certain distance from building entrances, curb cuts, bus stops, streetlights, traffic signs, and water mains, ruling out much of the sidewalk space on many blocks. There are also maintenance, tree species, and soil considerations as well as disturbances and stressors (such as storms, pollution, and pests) that make it difficult for trees to survive.</p>'
+      +'<figure>'
+        +'<img src="./images/dot-landscape-clearance-diagram.png" alt="Diagram">'
+        +'<figcaption>From NYC Department of Transportation’s <a href="https://www.nycstreetdesign.info/" target="_blank">Street Design Manual</a> (2020).</figcaption></figure>',
       location: {
         center: [-74, 40.73800],
-        zoom: 10.3,
-        zoomSmall: 17,
+        zoom: 10.2,
+        zoomSmall: 7,
       },
       onChapterEnter: [],
       onChapterExit: [],
@@ -423,49 +426,19 @@ var config = {
       alignment: 'centered',
       hidden: false,
       chapterDiv: 
-      '<p>The need to work around restrictive siting constraints undoubtedly explains the lack of vegetation in some areas. For example, the New York City Department of Parks and Recreation stipulates that street trees must be planted a certain distance from building entrances, curb cuts, bus stops, streetlights, traffic signs, and water mains, ruling out much of the sidewalk space on many blocks. There are also maintenance, tree species, and soil considerations as well as disturbances and stressors (such as storms, pollution, and pests) that make it difficult for trees to survive.</p>'
-      +'<figure>'
-        +'<img src="./images/dot-landscape-clearance-diagram.png" alt="Road torn up for construction along what will be a median">'
-        +'<figcaption>From NYC Department of Transportation’s <a href="https://www.nycstreetdesign.info/" target="_blank">Street Design Manual</a> (2020).</figcaption></figure>',
-      location: {
-        center: [-74, 40.73800],
-        zoom: 10.3,
-        zoomSmall: 7.25,
-      },
-      onChapterEnter: [],
-      onChapterExit: [],
-    },
-
-    { id: 'env-18',
-      alignment: 'centered',
-      hidden: false,
-      chapterDiv: 
-      '<p>The city’s most recent street tree census (2015) notes that there is an opportunity to plant approximately 250,000 additional street trees citywide, an almost 40 percent increase from the total that was counted. To its credit, the city has been making strides, with citywide street tree canopy increasing 3.5% between 2010 and 2017.</p>'
+      '<p>The city’s most recent street tree census (in 2015) notes that there is an opportunity to plant approximately 250,000 additional street trees citywide, an almost 40 percent increase from the total that was counted. To its credit, the city has been making strides, with citywide street tree canopy <a href="https://storymaps.arcgis.com/stories/63010002df2c40deab071abe68157131" target="_blank">increasing 3.5%</a> between 2010 and 2017.</p>'
       +'<p>However, the census also suggests that siting constraints alone do not explain why wide swaths of these corridors are devoid of anything green. Policy priorities, interagency coordination, and budget issues are also at play.</p>'
       +'<figure>'
         +'<div class="row">' 
           +'<div class="column-grid"><img src="./images/boston-rd-4.jpg" alt="Underutilized sidewalk"></div>'
           +'<div class="column-grid"><img src="./images/atlantic-ave-8.jpg" alt="Underutilized space under elevated tracks"></div></div>'
-          +'<figcaption>Underutilized concrete sidewalks and medians beg for creative greening and programming strategies to enliven them. Vegetation could be pervasive but is limited and piecemeal due to maintenance challenges and siting constraints. Photos: Kade Van Meeteren and Stephen Albonesi.</figcaption></figure>',
-      location: {
-        center: [-74, 40.73800],
-        zoom: 10.3,
-        zoomSmall: 7.25,
-      },
-      onChapterEnter: [],
-      onChapterExit: [],
-    },
-
-    { id: 'env-19',
-      alignment: 'center',
-      hidden: false,
-      chapterDiv: 
-      '<p>In our next post, we dive more deeply into pertinent plans, pilots, legislation, and visions by governmental and non-governmental actors to understand where and how they can be leveraged for greater impact. Included are City of Yes, Cool Corridors, and other plans and pilots that should be utilized for creative greening solutions where street tree planting is not possible.</p>'
+          +'<figcaption>Expansive concrete sidewalks and medians beg for creative greening and programming strategies to enliven them. Vegetation could be pervasive but is limited and piecemeal due to maintenance challenges and siting constraints. Photos: Kade Van Meeteren and Stephen Albonesi.</figcaption></figure>'
+      +'<p>In our next post, we inventory pertinent plans, pilots, legislation, and visions by governmental and non-governmental actors to understand where and how they can be leveraged for greater impact. While expanding the urban forest is critical, these strategies must also be utilized for creative solutions where street tree planting is not possible.</p>'
       +'<h1 style="text-align:right"><a href="https://mas-org.github.io/greener-corridors/policy-map/">Go to Policy Map</a></h1><br>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.2,
-        zoomSmall: 7.25,
+        zoomSmall: 7,
       },
       onChapterEnter: [],
       onChapterExit: [],
