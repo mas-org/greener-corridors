@@ -473,7 +473,7 @@ map.on('load', function () {
     { id: '19-canopy',
       source: {
         type: 'geojson',
-        data: './data/oti_treeCanopy/tree-canopy1.geojson'
+        data: './data/oti_treeCanopy.geojson'
       },
       type: 'fill',
       paint: {
@@ -499,6 +499,26 @@ map.on('load', function () {
         'fill-opacity': 0,
       }
     }); 
+
+  map.addLayer(
+    { id: '21-canopy2',
+      source: {
+        type: 'geojson',
+        data: './data/oti_treeCanopy.geojson'
+      },
+      type: 'fill',
+      paint: {
+        'fill-color': [
+          'interpolate', ['linear'], 
+          ['get', 'OBJECTID'],
+          1, '#99cc99', 
+          2, '#008000',
+          3, '#008000',
+          4, '#99cc99',
+        ],
+        'fill-opacity': 0,
+      }
+    });
 
   scroller
     .setup({
