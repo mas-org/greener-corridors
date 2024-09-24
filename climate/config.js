@@ -167,8 +167,7 @@ var config = {
       '<figure>'
         +'<img src="./images/northern-blvd-1.jpg" alt="Road with three lanes each way and car dealerships on either side."><br><br>'
         +'<img src="./images/northern-blvd-2.jpg" alt="Road with three lanes each way, with one bus lane, and buildings on either side.">'
-        +'<figcaption>Photos: Kade Van Meeteren.</figcaption></figure>'
-      +'<p>Located just two miles apart along Northern Boulevard, these images of the same 95-foot right-of-way demonstrate the difference that trees, road diets, building densities, and land uses play in terms of the arterial experience.</p>'
+        +'<figcaption>Located just two miles apart along Northern Boulevard, these images of the same 95-foot right-of-way demonstrate the difference that trees, road diets, building densities, and land uses play in terms of the arterial experience. Photos: Kade Van Meeteren.</figcaption></figure>'
       +'<p>As Jane Jacobs observed in <i>The Death and Life of Great American Cities</i>, the scale of buildings and the types of uses on a block have a major impact on the pedestrian experience. She noted that single use areas became “border vacuums,” deadened places that form barriers and create "blighted" zones in surrounding blocks. Automobile-centric land uses are the epitome, though their microclimates (like physical heat and pollution) can have the same deleterious effect in terms of street avoidance.</p>',
       location: {
         center: [-73.90399, 40.75359],
@@ -376,7 +375,7 @@ var config = {
       +'<p>Linden Boulevard stretches nearly four miles between Ozone Park, Queens and Flatbush, Brooklyn, near the southeast corner of Prospect Park. The highly trafficked thoroughfare primarily goes through lower-income residential areas, and while the western portion narrows to two-lane traffic, the bulk of the thoroughfare consists of 10 combined travel and parking lanes separated by three medians. Where it cuts through East New York, one of the city’s poorest neighborhoods, the corridor area experiences significantly higher than average surface temperatures and flooding issues.</p>'
       +'<p>Yet Linden Boulevard’s “sidewalk furnishing zone,” a portion of the sidewalk where most street trees are planted, only contains sporadic trees. The same is true of the corridor’s bare medians, whose total concrete width spans nearly 30 feet in some sections.</p>'
       +'<br><br><dl><dt><strong>Legend</strong></dt>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Study Area</dd></dl>',
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
       location: {
         center: [-73.9159502, 40.6541879],
         zoom: 16,
@@ -395,7 +394,7 @@ var config = {
         +'<figcaption>Eastern Parkway between Bedford and Franklin Avenues. In 2024, the block was named second greenest in Brooklyn by the Brooklyn Botanic Garden. Photo: Google Street View, 2022.</figcaption></figure>'
       +'<p>Eastern Parkway, located just one mile south, is a completely different story despite handling virtually the same amount of traffic as Linden Boulevard. Designed by Frederick Law Olmstead and Calvert Vaux in the late-1800’s to connect Brooklyn neighborhoods to Prospect Park, the three-mile, primarily residential corridor features lush tree-lined medians, bike paths, and benches. While the right of way is up to 40 feet wider than Linden Boulevard, the street and its adjacent land have twice as much tree canopy coverage and much lower surface temperatures. And all of this rests above two of the busiest subway lines in the city.</p>'
       +'<br><br><dl><dt><strong>Legend</strong></dt>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Study Area</dd></dl>',
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
       location: {
         center: [-73.9562715, 40.6700859],
         zoom: 16,
