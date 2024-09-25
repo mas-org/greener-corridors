@@ -299,8 +299,8 @@ var config = {
       alignment: 'left',
       hidden: false,
       chapterDiv: 
-      '<p>The City has been installing cloudburst infrastructure in areas that are within priority sewer sheds, socially vulnerable neighborhoods, and where interagency infrastructure projects and ecological connectivity priorities align. Green infrastructure tends to be clustered in certain geographic areas rather than equally dispersed throughout the city or along certain corridors. According to the Department of Environmental Protection, about 90 percent of green infrastructure has been installed in environmental justice neighborhoods.</p>'
-      +'<p>Nevertheless, there are places where the City has taken a corridor approach to green infrastructure investment. <mark>[Example]</mark></p>',
+      '<p>The City has been installing cloudburst infrastructure in areas that are within priority sewer sheds, socially vulnerable neighborhoods, and where interagency infrastructure projects and ecological connectivity priorities align. According to the Department of Environmental Protection, about 90 percent of green infrastructure has been installed in environmental justice neighborhoods.</p>'
+      +'<p>There are a few places where the City has taken a corridor-specific approach to green infrastructure investment. <mark>[Example]</mark></p>',
       location: {
         center: [-73.829391, 40.581169],
         zoom: 13,
@@ -384,7 +384,7 @@ var config = {
       '<figure>'
         +'<img src="./images/linden-blvd.png" alt="Three lane road sandwiched by plain medians with no furnishing">'
         +'<figcaption>Linden Boulevard. Photo: Google Street View, 2022.</figcaption></figure>'
-      +'<p>Linden Boulevard stretches nearly four miles between Ozone Park, Queens and Flatbush, Brooklyn, near the southeast corner of Prospect Park. The highly trafficked thoroughfare primarily goes through lower-income residential areas, and while the western portion narrows to two-lane traffic, the bulk of the thoroughfare consists of 10 combined travel and parking lanes separated by three medians. Where it cuts through East New York, one of the city’s poorest neighborhoods, the corridor area experiences significantly higher than average surface temperatures and flooding issues.</p>'
+      +'<p>The busiest portion of Linden Boulevard stretches about six miles between Ozone Park, Queens and Flatbush, Brooklyn, near the southeast corner of Prospect Park. The highly trafficked thoroughfare primarily goes through lower-income residential areas, and while the westernmost portion narrows to two-lane traffic, the bulk of the thoroughfare consists of 10 combined travel and parking lanes separated by three medians. Where it cuts through East New York, one of the city’s poorest neighborhoods, the corridor experiences significantly higher than average surface temperatures and flooding issues.</p>'
       +'<p>Yet Linden Boulevard’s “sidewalk furnishing zone,” a portion of the sidewalk where most street trees are planted, only contains sporadic trees. The same is true of the corridor’s bare medians, whose total concrete width spans nearly 30 feet in some sections.</p>'
       +'<br><br><dl><dt><strong>Legend</strong></dt>'
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
@@ -408,7 +408,7 @@ var config = {
       '<figure>'
         +'<img src="./images/eastern-pkwy.png" alt="Verdant roadway">'
         +'<figcaption>Eastern Parkway between Bedford and Franklin Avenues. In 2024, the block was named second greenest in Brooklyn by the Brooklyn Botanic Garden. Photo: Google Street View, 2022.</figcaption></figure>'
-      +'<p>Eastern Parkway, located just one mile south, is a completely different story despite handling virtually the same amount of traffic as Linden Boulevard. Designed by Frederick Law Olmstead and Calvert Vaux in the late-1800’s to connect Brooklyn neighborhoods (including Crown Heights and East New York, both EJ areas today) to Prospect Park, the three-mile, primarily residential corridor features lush tree-lined medians, bike paths, and benches. While the right of way is up to 40 feet wider than Linden Boulevard, the street and its adjacent land have twice as much tree canopy coverage and much lower surface temperatures. And all of this rests above two of the busiest subway lines in the city.</p>'
+      +'<p>Eastern Parkway, located just one mile north, is a completely different story despite handling a similar amount of traffic as Linden Boulevard. Designed by Frederick Law Olmstead and Calvert Vaux in the late-1800’s to connect Brooklyn neighborhoods (including Crown Heights and East New York, both EJ areas today) to Prospect Park, the three-mile, primarily residential corridor features lush tree-lined medians, bike paths, and benches. While the right of way is up to 40 feet wider than Linden Boulevard, the street and its adjacent land have twice as much tree canopy coverage and much lower surface temperatures. And all of this rests above two of the busiest subway lines in the city.</p>'
       +'<br><br><dl><dt><strong>Legend</strong></dt>'
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
       location: {
@@ -432,10 +432,10 @@ var config = {
       alignment: 'centered',
       hidden: false,
       chapterDiv: 
-      '<p>The need to work around restrictive siting constraints undoubtedly explains the lack of vegetation in some areas. For example, the New York City Department of Parks and Recreation stipulates that street trees must be planted a certain distance from building entrances, curb cuts, bus stops, streetlights, traffic signs, and water mains, ruling out much of the sidewalk space on many blocks. There are also maintenance, tree species, and soil considerations as well as disturbances and stressors (such as storms, pollution, and pests) that make it difficult for trees to survive.</p>'
+      '<p>The need to work around restrictive siting constraints undoubtedly explains the lack of vegetation in some areas. For example, the New York City Department of Parks and Recreation stipulates that street trees must be planted a certain distance from building entrances, curb cuts, bus stops, streetlights, traffic signs, and water mains, ruling out much of the sidewalk space on many blocks, especially in commercial areas. There are also maintenance, tree species, and soil considerations as well as disturbances and stressors (such as storms, pollution, and pests) that make it difficult for trees to survive.</p>'
       +'<figure>'
         +'<img src="./images/dot-landscape-clearance-diagram.png" alt="Diagram">'
-        +'<figcaption>From NYC Department of Transportation’s <a href="https://www.nycstreetdesign.info/" target="_blank">Street Design Manual</a> (2020).</figcaption></figure>',
+        +'<figcaption>Landscape clearance diagram from the NYC Department of Transportation’s <a href="https://www.nycstreetdesign.info/" target="_blank">Street Design Manual</a> (2020).</figcaption></figure>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.2,
