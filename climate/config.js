@@ -299,8 +299,11 @@ var config = {
       alignment: 'left',
       hidden: false,
       chapterDiv: 
-      '<p>The City has been installing cloudburst infrastructure in areas that are within priority sewer sheds, socially vulnerable neighborhoods, and where interagency infrastructure projects and ecological connectivity priorities align. According to the Department of Environmental Protection, about 90 percent of green infrastructure has been installed in environmental justice neighborhoods.</p>'
-      +'<p>There are a few places where the City has taken a corridor-specific approach to green infrastructure investment. <mark>[Example]</mark></p>',
+      '<figure>'
+        +'<img src="./images/beach-108.jpg" alt="Beach 108th Street in Rockaway, Queens.">'
+        +'<figcaption>Beach 108th Street in Rockaway, Queens, whose transportation and stormwater infrastructure was rebuilt as part of an interagency effort. Photo: New York City Department of Design and Construction.</figcaption></figure>'
+      +'<p>The City has been installing cloudburst infrastructure in areas that are within priority sewer sheds, socially vulnerable neighborhoods, and where interagency infrastructure projects and ecological connectivity priorities align. According to the Department of Environmental Protection (DEP), about 90 percent of green infrastructure has been installed in environmental justice neighborhoods.</p>'
+      +'<p>There are several places where the City has taken a corridor approach to green infrastructure investment. Last year, for example, DEP, along with the Department of Transportation, Department of Design and Construction, MOCEJ, Councilmember Joann Ariola, and the New York State Office of Resilient Homes and Communities, completed a $16.6 million infrastructure project that rebuilt Beach 108th Street in Rockaway, Queens. While Beach 108th Street is not a major arterial corridor, the project nonetheless demonstrates the potential for wholesale improvement when interagency priorities and resources align. Beach 108th Street now has new trees, sidewalks, benches, bike lanes, storm sewers, catch basins, and porous pavement that can absorb nearly 1.3 million gallons of stormwater into the ground each year.</p>',
       location: {
         center: [-73.829391, 40.581169],
         zoom: 13,
