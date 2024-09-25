@@ -116,10 +116,10 @@ var config = {
       alignment: 'full',
       hidden: false,
       chapterDiv: 
-      '<p>Perhaps nowhere is this more apparent than in Jamaica, where Jamaica Avenue, Liberty Avenue, Merrick Boulevard, and several other stroads go through an area that is more than five degrees hotter on average than the rest of the city. The stroads cluster around Downtown Jamaica, a dense commercial center that is New York City’s busiest bus hub and the convergence of subway, Long Island Rail Road, and JFK Air Trains. Whereas Jamaica Avenue is primarily a commercial corridor with one and two-story shops and the occasional office tower, Liberty Avenue is home to single-story warehouses, auto repair businesses, parking lots, and vacant land. Merrick Boulevard is more of a mix of the two.</p>'
-       +'<p>[IMAGE - Jamaica Ave]</p>'
-      +'<p>[IMAGE - Liberty Ave]</p>'
-      +'<p>[IMAGE - Merrick Blvd]</p>',
+      '<figure>'
+        +'<img src="./images/jamaica-1.jpg" alt="Roadway at intersection of 173rd Street and Jamaica Avenue, a commerical corridor with three lanes each way">'
+        +'<figcaption>Jamaica Avenue goes through one of the hottest areas of the city. There are few trees, partly because of siting constraints. Photo: Rawnak Zaman.</figcaption></figure>'
+      +'<p>Perhaps nowhere is this more apparent than in Jamaica, where Jamaica Avenue, Liberty Avenue, Merrick Boulevard, and several other stroads go through an area that is more than five degrees hotter on average than the rest of the city. The stroads cluster around Downtown Jamaica, a dense commercial center that is New York City’s busiest bus hub and the convergence of subway, Long Island Rail Road, and JFK Air Trains. Whereas Jamaica Avenue is primarily a commercial corridor with one and two-story shops and the occasional office tower, Liberty Avenue is home to single-story warehouses, auto repair businesses, parking lots, and vacant land. Merrick Boulevard is more of a mix of the two.</p>',
       location: {
         center: [-73.80246, 40.69182],
         zoom: 13,
@@ -141,10 +141,7 @@ var config = {
       alignment: 'full',
       hidden: false,
       chapterDiv: 
-      '<figure>'
-        +'<img src="./images/jamaica-1.jpg" alt="Roadway at intersection of 173rd Street and Jamaica Avenue, a commerical corridor with three lanes each way">'
-        +'<figcaption>Jamaica Avenue goes through one of the hottest areas of the city. There are few trees, partly because of siting constraints. Photo: Rawnak Zaman.</figcaption></figure>'
-      +'<p>There is only one substantial park in the vicinity (Rufus King Park), and the community district ranks <a href="https://www.ny4p.org/client-uploads/pdf/District-Profiles-2021/NY4P-Profiles_QN12.pdf" target="_blank">49th out of 59 community districts</a> citywide in terms of available park space, with just 1.1 acres per thousand residents compared with the median citywide ratio of 1.5. Each corridor also lacks mature and consistent tree canopy, a topic we will explore later in greater detail.</p>',
+      '<p>There is only one substantial park in the vicinity (Rufus King Park), and the community district ranks <a href="https://www.ny4p.org/client-uploads/pdf/District-Profiles-2021/NY4P-Profiles_QN12.pdf" target="_blank">49th out of 59 community districts</a> citywide in terms of available park space, with just 1.1 acres per thousand residents compared with the median citywide ratio of 1.5. Each corridor also lacks mature and consistent tree canopy, a topic we will explore later in greater detail.</p>',
       location: {
         center: [-73.80366, 40.70373],
         zoom: 16,
