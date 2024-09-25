@@ -95,7 +95,7 @@ var config = {
       '<p>Virtually all of the more than 100 stroads we examined go through areas that were found to be hotter than the citywide average surface temperature. While many of these areas are industrial, most arterial corridors support many adjacent land uses that may be just as heat-intensive, from shops and apartments to parking lots and "big box" stores.</p>'
       +'<br><dl><dt><strong>Legend</strong></dt>'        
         +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads in Environmental Justice (EJ) Study Area</dd>'
-        +'<dd>Relative Average Temperature [+1&deg;F to +8&deg;F]:<br><svg height="14" width="50%"><defs><linearGradient id="grad2" x1="0%" x2="100%" y1="0%" y2="0%"><stop offset="0%" stop-color="#E3FEC6" /><stop offset="50%" stop-color="#FBECAB" /><stop offset="100%" stop-color="#FCACAA" /></linearGradient></defs><rect width="100%" height="100%" clip-path="url(#clip)" fill="url(#grad2)"/></svg></dd></dl>',
+        +'<dd>Relative Average Surface Temperature [+1&deg;F to +8&deg;F]:<br><svg height="14" width="50%"><defs><linearGradient id="grad2" x1="0%" x2="100%" y1="0%" y2="0%"><stop offset="0%" stop-color="#E3FEC6" /><stop offset="50%" stop-color="#FBECAB" /><stop offset="100%" stop-color="#FCACAA" /></linearGradient></defs><rect width="100%" height="100%" clip-path="url(#clip)" fill="url(#grad2)"/></svg></dd></dl>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
