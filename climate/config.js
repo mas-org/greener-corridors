@@ -181,7 +181,7 @@ var config = {
       hidden: false,
       chapterDiv:
       '<p>Unfortunately, most people must encounter stroads because they are major transportation corridors and local and big box shopping destinations. A 2024 <a href="https://projects.transalt.org/new-york-city-bus-urban-heat" target="_blank">study by Transportation Alternatives</a> identified 100 of New York City’s hottest bus stops, where average temperatures are up to 14.5 degrees warmer than the coolest bus stops. A quarter of them are located along 11 stroads within the city’s EJ areas: Springfield Boulevard in Queens; Kings Highway, Norstrand Avenue, and Utica Avenue in Brooklyn; and Edgewater Road, East 138th Street, 233rd Street, Eastchester Road, Grand Concourse, Webster Avenue, and Westchester Avenue in the Bronx.</p>'
-      +'<p>Heat then, has a major impact on people’s lived experiences when it comes to these spaces. In places like Jamaica, where the City is leading an effort with the community to rezone several arterial corridors, there is an imperative to utilize the neighborhood’s tangle of stroads as a key solution to urban heat.</p>'
+      +'<p>Heat then, has a major impact on people’s lived experiences when it comes to these spaces. In places like Jamaica, where the City is leading an effort with the community to rezone several arterial corridors, it is imperative to utilize the neighborhood’s tangle of stroads as a key solution to urban heat.</p>'
       +'<figure>'
         +'<img src="./images/jamaica-2.jpg" alt="Archer Avenue bus lanes">'
         +'<figcaption>Downtown Jamaica has more than 45 different bus routes along corridors like Archer Avenue where heat is omnipresent. Photo: Rawnak Zaman.</figcaption></figure>',
