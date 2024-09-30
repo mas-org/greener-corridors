@@ -258,7 +258,7 @@ var config = {
         +'<img src="./images/wikimedia-flatbush-ave.jpg" alt="Cars navigate completely flooded road near Prospect Park.">'
         +'<figcaption>Flatbush Avenue was inundated with floodwater caused by Tropical Storm Ophelia in 2023. Photo: Wikimedia Commons, Wil540 art.</figcaption></figure>',
       location: {
-        center: [-74, 40.73800],
+        center: [-73.95867, 40.64335],
         zoom: 11,
         zoomSmall: 8,
       },
