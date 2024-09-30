@@ -417,70 +417,58 @@ map.on('load', function () {
       }
     }, '02-studyArea');
 
-  map.addLayer(
-    { id: '15-high-tide',
-      source: {
-        type: 'geojson',
-        data: './data/dep_extreme_flooding/future-high-tide.geojson'
-      },
-      type: 'fill',
-      paint: {
-        'fill-color': '#004C73',
-        'fill-opacity': 0,
-      }
-    });
+    map.addLayer(
+      { id: '15-canopy',
+        source: {
+          type: 'geojson',
+          data: './data/oti_treeCanopy.geojson'
+        },
+        type: 'fill',
+        paint: {
+          'fill-color': '#008000',
+          'fill-opacity': 0,
+        }
+      });
 
-  map.addLayer(
-    { id: '16-deep',
-      source: {
-        type: 'geojson',
-        data: './data/dep_extreme_flooding/deep-flooding.geojson'
-      },
-      type: 'fill',
-      paint: {
-        'fill-color': '#00A9E6',
-        'fill-opacity': 0,
-      }
-    });
-
-  map.addLayer(
-    { id: '17-nuisance1',
-      source: {
-        type: 'geojson',
-        data: './data/dep_extreme_flooding/nuisance1.geojson'
-      },
-      type: 'fill',
-      paint: {
-        'fill-color': '#73DFFF',
-        'fill-opacity': 0,
-      }
-    });
-
-  map.addLayer(
-    { id: '18-nuisance2',
-      source: {
-        type: 'geojson',
-        data: './data/dep_extreme_flooding/nuisance2.geojson'
-      },
-      type: 'fill',
-      paint: {
-        'fill-color': '#73DFFF',
-        'fill-opacity': 0,
-      }
-    });
-
-  map.addLayer(
-    { id: '19-canopy',
-      source: {
-        type: 'geojson',
-        data: './data/oti_treeCanopy.geojson'
-      },
-      type: 'fill',
-      paint: {
-        'fill-color': '#008000',
-        'fill-opacity': 0,
-      }
-    });
+    map.addLayer(
+      { id: '16-canopy-linden',
+        source: {
+          type: 'geojson',
+          data: './data/oti_treeCanopy.geojson'
+        },
+        type: 'fill',
+        paint: {
+          'fill-color': [
+            'interpolate', ['linear'], 
+            ['get', 'OBJECTID'],
+            1, 'transparent', 
+            2, 'transparent',
+            3, '#008000',
+            4, 'transparent',
+          ],
+          'fill-opacity': 0,
+        }
+      });
+  
+    map.addLayer(
+      { id: '17-canopy-eastern',
+        source: {
+          type: 'geojson',
+          data: './data/oti_treeCanopy.geojson'
+        },
+        type: 'fill',
+        paint: {
+          'fill-color': [
+            'interpolate', ['linear'], 
+            ['get', 'OBJECTID'],
+            1, 'transparent', 
+            2, '#008000',
+            3, 'transparent',
+            4, 'transparent',
+          ],
+          'fill-opacity': 0,
+        }
+      });
 
   map.addLayer(
     { id: '20-stroads-flood',
@@ -499,26 +487,6 @@ map.on('load', function () {
         'fill-opacity': 0,
       }
     }); 
-
-  map.addLayer(
-    { id: '21-canopy2',
-      source: {
-        type: 'geojson',
-        data: './data/oti_treeCanopy.geojson'
-      },
-      type: 'fill',
-      paint: {
-        'fill-color': [
-          'interpolate', ['linear'], 
-          ['get', 'OBJECTID'],
-          1, '#99cc99', 
-          2, '#008000',
-          3, '#008000',
-          4, '#99cc99',
-        ],
-        'fill-opacity': 0,
-      }
-    });
 
   scroller
     .setup({

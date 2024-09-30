@@ -10,7 +10,6 @@ let bylineDiv =
 +'<div class="row">' 
   +'<div class="column"><h1><mark>1. Mobility</mark></h1></div>'
   +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/climate/">2. Climate</a></h1></div>'
-  +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/policy-map/">3. Policy Map</a></h1></div>'
   +'</div><br><hr>'
 +'<div class="container">'
   +'<img src="../images/cover02.jpg" alt="Cars parked on sidewalk in front of autorepair shop" width=100%>'

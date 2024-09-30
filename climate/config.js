@@ -10,7 +10,6 @@ let bylineDiv =
 +'<div class="row">' 
   +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/built-for-auto/">1. Mobility</a></h1></div>'
   +'<div class="column"><h1><mark>2. Climate</mark></h1></div>'
-  +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/policy-map/">3. Policy Map</a></h1></div>'
   +'</div><br><hr>'
 +'<div class="container">'
   +'<img src="../images/cover03.jpg" alt="Person standing under the shade of a small street tree">'
@@ -187,20 +186,7 @@ var config = {
         zoom: 10.3,
         zoomSmall: 7,
       },
-      onChapterEnter: [
-        { layer: '15-high-tide',
-          opacity: 0,
-        },
-        { layer: '16-deep',
-          opacity: 0,
-        },
-        { layer: '17-nuisance1',
-          opacity: 0,
-        },
-        { layer: '18-nuisance2',
-          opacity: 0,
-        },
-      ],
+      onChapterEnter: [],
       onChapterExit: [
         { layer: '02-studyArea',
           opacity: 0,
@@ -209,65 +195,35 @@ var config = {
     },
 
     { id: 'env-08',
-      alignment: 'left',
+      alignment: 'centered',
       hidden: false,
       chapterDiv: 
       '<p>Like heat, nuisance and stormwater-related flooding are becoming more frequent and intense in New York City. According to the <a href="https://nyaspubs.onlinelibrary.wiley.com/doi/10.1111/nyas.15116" target="_blank">New York City Panel on Climate Change</a>, average precipitation is expected to increase by four to 11 percent between now and 2050.</p>'
-      +'<p>Hurricane Sandy was a wakeup call to protect the city’s coasts from storm surge, but recent and unprecedented cloudburst events have revealed the flooding vulnerability of the entire city, <a href="https://www.nyc.gov/site/dep/whats-new/resilient-nyc-partners.page" target="_blank">more than 70 percent of which</a> is impervious. During Hurricane Ida in 2021, some areas of the city received 3.75 inches per hour&mdash;more than twice the maximum sewer capacity.</p>'
-      +'<br><dl><dt><strong>Legend: Extreme Stormwater Flooding Scenario with 2080s Sea Level Rise (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</strong></dt>'        
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Nuisance Flooding</dd>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Deep & Contiguous Flooding</dd>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#004C73" /></svg>Future High Tides</dd></dl>',
+      +'<p>Hurricane Sandy was a wakeup call to protect the city’s coasts from storm surge, but recent and unprecedented cloudburst events have revealed the flooding vulnerability of the entire city, <a href="https://www.nyc.gov/site/dep/whats-new/resilient-nyc-partners.page" target="_blank">more than 70 percent of which</a> is impervious. During Hurricane Ida in 2021, some areas of the city received 3.75 inches per hour&mdash;more than twice the maximum sewer capacity.</p>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
         zoomSmall: 7,
       },
       onChapterEnter: [
-        { layer: '15-high-tide',
-          opacity: 1,
-        },
-        { layer: '16-deep',
-          opacity: 1,
-        },
-        { layer: '17-nuisance1',
-          opacity: 1,
-        },
-        { layer: '18-nuisance2',
-          opacity: 1,
+        { layer: '20-stroads-flood',
+          opacity: 0,
         },
       ],
       onChapterExit: [],
     },
 
     { id: 'env-09',
-      alignment: 'left',
+      alignment: 'centered',
       hidden: false,
       chapterDiv: 
-      '<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors. Roughly 80% of Neptune and Surf Avenues would be underwater in an extreme stormwater flood, for example.</p>'
-      +'<br><dl><dt><strong>Legend: Extreme Stormwater Flooding Scenario with 2080s Sea Level Rise (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</strong></dt>'        
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Nuisance Flooding</dd>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Deep & Contiguous Flooding</dd>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#004C73" /></svg>Future High Tides</dd>'
-        +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads where at least 20% of right of way is affected in extreme scenarios</dd></dl>',
+      '<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors. Roughly 80% of Neptune and Surf Avenues would be underwater in an extreme stormwater flood, for example.</p>',
       location: {
         center: [-74.00316, 40.70554],
         zoom: 11,
         zoomSmall: 8,
       },
       onChapterEnter: [
-        { layer: '15-high-tide',
-          opacity: 1,
-        },
-        { layer: '16-deep',
-          opacity: 1,
-        },
-        { layer: '17-nuisance1',
-          opacity: 1,
-        },
-        { layer: '18-nuisance2',
-          opacity: 1,
-        },
         { layer: '20-stroads-flood',
           opacity: 1,
         },
@@ -293,7 +249,7 @@ var config = {
     },
 
     { id: 'env-11',
-      alignment: 'left',
+      alignment: 'centered',
       hidden: false,
       chapterDiv: 
       '<figure>'
@@ -312,18 +268,6 @@ var config = {
         },
       ],
       onChapterExit: [
-        { layer: '15-high-tide',
-          opacity: 0,
-        },
-        { layer: '16-deep',
-          opacity: 0,
-        },
-        { layer: '17-nuisance1',
-          opacity: 0,
-        },
-        { layer: '18-nuisance2',
-          opacity: 0,
-        },
         { layer: '20-stroads-flood',
           opacity: 0,
         },
@@ -345,7 +289,7 @@ var config = {
         zoomSmall: 7.25,
       },
       onChapterEnter: [
-        { layer: '19-canopy',
+        { layer: '15-canopy',
           opacity: 0,
         },
       ],
@@ -363,15 +307,15 @@ var config = {
         zoomSmall: 11.5,
       },
       onChapterEnter: [
-        { layer: '19-canopy',
+        { layer: '15-canopy',
           opacity: 1,
         },
-        { layer: '21-canopy2',
+        { layer: '16-canopy-linden',
           opacity: 0,
         },
       ],
       onChapterExit: [
-        { layer: '19-canopy',
+        { layer: '15-canopy',
           opacity: 0,
         },
       ],
@@ -386,7 +330,7 @@ var config = {
         +'<figcaption>Linden Boulevard. Photo: Google Street View, 2022.</figcaption></figure>'
       +'<p>The busiest portion of Linden Boulevard stretches about six miles between Ozone Park, Queens and Flatbush, Brooklyn, near the southeast corner of Prospect Park. The highly trafficked thoroughfare primarily goes through lower-income residential areas, and while the westernmost portion narrows to two-lane traffic, the bulk of the thoroughfare consists of 10 combined travel and parking lanes separated by three medians. Where it cuts through East New York, one of the city’s poorest neighborhoods, the corridor experiences significantly higher than average surface temperatures and flooding issues.</p>'
       +'<p>Yet Linden Boulevard’s “sidewalk furnishing zone,” a portion of the sidewalk where most street trees are planted, only contains sporadic trees. The same is true of the corridor’s bare medians, whose total concrete width spans nearly 30 feet in some sections.</p>'
-      +'<br><br><dl><dt><strong>Legend</strong></dt>'
+      +'<br><dl><dt><strong>Legend</strong></dt>'
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
       location: {
         center: [-73.91998, 40.65444],
@@ -394,11 +338,18 @@ var config = {
         zoomSmall: 12,
       },
       onChapterEnter: [
-        { layer: '21-canopy2',
+        { layer: '16-canopy-linden',
           opacity: 1,
         },
+        { layer: '17-canopy-eastern',
+          opacity: 0,
+        },
       ],
-      onChapterExit: [],
+      onChapterExit: [
+        { layer: '16-canopy-linden',
+          opacity: 0,
+        },
+      ],
     },
 
     { id: "env-15",
@@ -409,7 +360,7 @@ var config = {
         +'<img src="./images/eastern-pkwy.png" alt="Verdant roadway">'
         +'<figcaption>Eastern Parkway between Bedford and Franklin Avenues. In 2024, the block was named second greenest in Brooklyn by the Brooklyn Botanic Garden. Photo: Google Street View, 2022.</figcaption></figure>'
       +'<p>Eastern Parkway, located just one mile north, is a completely different story despite handling a similar amount of traffic as Linden Boulevard. Designed by Frederick Law Olmstead and Calvert Vaux in the late-1800’s to connect Brooklyn neighborhoods (including Crown Heights and East New York, both EJ areas today) to Prospect Park, most of the four-mile, primarily residential corridor features lush tree-lined medians, bike paths, and benches. While the right of way is up to 40 feet wider than Linden Boulevard, the street and its adjacent land have twice as much tree canopy coverage and much lower surface temperatures. And all of this rests above two of the busiest subway lines in the city.</p>'
-      +'<br><br><dl><dt><strong>Legend</strong></dt>'
+      +'<br><dl><dt><strong>Legend</strong></dt>'
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
       location: {
         center: [-73.9562715, 40.6700859],
@@ -417,12 +368,12 @@ var config = {
         zoomSmall: 12,
       },
       onChapterEnter: [
-        { layer: '22-eastern',
+        { layer: '17-canopy-eastern',
           opacity: 1,
         },
       ],
       onChapterExit: [
-        { layer: '22-eastern',
+        { layer: '17-canopy-eastern',
           opacity: 0,
         },
       ],
@@ -456,8 +407,7 @@ var config = {
           +'<div class="column-grid"><img src="./images/boston-rd-4.jpg" alt="Underutilized sidewalk"></div>'
           +'<div class="column-grid"><img src="./images/atlantic-ave-8.jpg" alt="Underutilized space under elevated tracks"></div></div>'
           +'<figcaption>Expansive concrete sidewalks and medians beg for creative greening and programming strategies to enliven them. Vegetation could be pervasive but is limited and piecemeal due to maintenance challenges and siting constraints. Photos: Kade Van Meeteren and Stephen Albonesi.</figcaption></figure>'
-      +'<p>In our next post, we inventory pertinent plans, pilots, legislation, and visions by governmental and non-governmental actors to understand where and how they can be leveraged for greater impact. While expanding the urban forest is critical, these strategies must also be utilized for creative solutions where street tree planting is not possible.</p>'
-      +'<h1 style="text-align:right"><a href="https://mas-org.github.io/greener-corridors/policy-map/">Go to Policy Map</a></h1><br>',
+      +'<p>In our next post, we will inventory pertinent plans, pilots, legislation, and visions by governmental and non-governmental actors to understand where and how they can be leveraged for greater impact. While expanding the urban forest is critical, these strategies must also be utilized for creative solutions where street tree planting is not possible.</p>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.2,
