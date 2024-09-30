@@ -1,4 +1,4 @@
-var smallMedia = window.matchMedia('(max-width: 600px)').matches;
+var smallMedia = window.matchMedia('(max-width: 500px)').matches;
 
 var layerTypes = {
   fill: ['fill-opacity'],
@@ -134,29 +134,10 @@ if (config.showMarkers) {
 
 map.on('load', function () {
   map.addLayer(
-    { id: '02-studyArea',
-      source: {
-        type: 'geojson',
-        data: '../data/stroads.geojson',
-      },
-      type: 'fill',
-      paint: {
-        'fill-color': [
-          'interpolate',
-          ['linear'],
-          ['get', 'maj_ej'],
-          0, 'transparent', 
-          1, '#f35d17'],
-        'fill-opacity': 0,
-      }
-    });
-
-  map.addLayer(
     { id: '01-stroads',
       source: {
         type: 'geojson',
-        data: '../data/stroads.geojson',
-      },
+        data: '../data/stroads.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
@@ -165,29 +146,39 @@ map.on('load', function () {
           ['get', 'maj_ej'],
           0, '#d8d8d8', 
           1, '#f35d17'],
-        'fill-opacity': 0,
-      }
+        'fill-opacity': 0}
     });
-
+  map.addLayer(
+    { id: '02-studyArea',
+      source: {
+        type: 'geojson',
+        data: '../data/stroads.geojson'},
+      type: 'fill',
+      paint: {
+        'fill-color': [
+          'interpolate',
+          ['linear'],
+          ['get', 'maj_ej'],
+          0, 'transparent', 
+          1, '#f35d17'],
+        'fill-opacity': 0}
+    });
   map.addLayer(
     { id: '03-eja',
       source: {
         type: 'geojson',
-        data: '../data/ej_2010.geojson'
-      },
+        data: '../data/ej_2010.geojson'},
       type: 'fill',
       paint: {
         'fill-color': '#eab696',
-        'fill-opacity': 0,
-      }
+        'fill-opacity': 0}
     });
 
   map.addLayer(
     { id: '04-acs-car',
       source: {
         type: 'geojson',
-        data: './data/acs_vehicleOwn.geojson',
-      },
+        data: './data/acs_vehicleOwn.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
@@ -197,36 +188,28 @@ map.on('load', function () {
           2, '#98a4b6',
           3, '#7882a7',
           4, '#556197',
-          5, '#2d4387'
-        ],
-        'fill-opacity': 0,
-      }
-    }, '02-studyArea');
-  
+          5, '#2d4387'],
+        'fill-opacity': 0}
+    }, '02-studyArea');  
   map.addLayer(
     { id: '05-stroads-car-high',
       source: {
         type: 'geojson',
-        data: '../data/stroads.geojson',
-      },
+        data: '../data/stroads.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
           'case',
           ['==', ['get', 'pct_high'], null],
           'transparent',
-          ['step', ['get', 'pct_high'], 'transparent', .75, '#f35d17'],
-        ],
-        'fill-opacity': 0,
-      }
+          ['step', ['get', 'pct_high'], 'transparent', .75, '#f35d17']],
+        'fill-opacity': 0}
     });
-
   map.addLayer(
     { id: '06-acs-car-high',
       source: {
         type: 'geojson',
-        data: './data/acs_vehicleOwn.geojson',
-      },
+        data: './data/acs_vehicleOwn.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
@@ -236,36 +219,28 @@ map.on('load', function () {
           2, 'transparent',
           3, '#7882a7',
           4, '#556197',
-          5, '#2d4387'
-        ],
-        'fill-opacity': 0,
-      }
+          5, '#2d4387'],
+        'fill-opacity': 0}
     }, '05-stroads-car-high');
-
   map.addLayer(
     { id: '07-stroads-car-low',
       source: {
         type: 'geojson',
-        data: '../data/stroads.geojson',
-      },
+        data: '../data/stroads.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
           'case',
           ['==', ['get', 'pct_low'], null],
           'transparent',
-          ['step', ['get', 'pct_low'], 'transparent', .75, '#f35d17'],
-        ],
-        'fill-opacity': 0,
-      }
+          ['step', ['get', 'pct_low'], 'transparent', .75, '#f35d17']],
+        'fill-opacity': 0}
     }); 
-
   map.addLayer(
     { id: '08-acs-car-low',
       source: {
         type: 'geojson',
-        data: './data/acs_vehicleOwn.geojson',
-      },
+        data: './data/acs_vehicleOwn.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
@@ -275,18 +250,14 @@ map.on('load', function () {
           2, '#98a4b6',
           3, 'transparent',
           4, 'transparent',
-          5, 'transparent'
-        ],
-        'fill-opacity': 0,
-      }
+          5, 'transparent'],
+        'fill-opacity': 0}
     }, '07-stroads-car-low');
-  
   map.addLayer(
     { id: '09-acs-transit',
       source: {
         type: 'geojson',
-        data: './data/acs_publicTranspo.geojson',
-      },
+        data: './data/acs_publicTranspo.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
@@ -297,31 +268,25 @@ map.on('load', function () {
           3, '#9284c2',
           4, '#7f62ad',
           5, '#6b4099',
-          6, '#561b84'
-        ],
-        'fill-opacity': 0,
-      }
+          6, '#561b84'],
+        'fill-opacity': 0}
     }, '02-studyArea'); 
-   
+
   map.addLayer(
     { id: '10-dot-priority',
       source: {
         type: 'geojson',
-        data: './data/dot_priority_studyArea.geojson',
-      },
+        data: './data/dot_priority_studyArea.geojson'},
       type: 'fill',
       paint: {
         'fill-color': '#f35d17',
-        'fill-opacity': 0,
-      }
-    });
-  
+        'fill-opacity': 0}
+    }); 
   map.addLayer(
     { id: '11-dot-demand',
       source: {
         type: 'geojson',
-        data: './data/dot_demand_studyArea.geojson',
-      },
+        data: './data/dot_demand_studyArea.geojson'},
       type: 'line',
       paint: {
         'line-color': [
@@ -334,29 +299,14 @@ map.on('load', function () {
           4, '#ce887b',
           5, '#FAAE7B'],
         'line-width': 3.5,
-        'line-opacity': 0,
-      }
+        'line-opacity': 0}
     });
 
   map.addLayer(
-    { id: '12-oti-canopy',
-      source: {
-        type: 'geojson',
-        data: './data/oti_treeCanopy.geojson',
-      },
-      type: 'fill',
-      paint: {
-        'fill-color': '#008000',
-        'fill-opacity': 0,
-      }
-    });
-  
-  map.addLayer(
-    { id: '13-heat-map',
+    { id: '12-heat-map',
       source:  {
         type: 'geojson',
-        data: './data/nycc_heatmap.geojson',
-      },
+        data: './data/nycc_heatmap.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
@@ -378,18 +328,14 @@ map.on('load', function () {
           5, '#FCDCAA',
           6, '#FCCDAA',
           7, '#FCBCAA',
-          8, '#FCACAA',
-          ],
-        'fill-opacity': 0,
-      }
-    }, '02-studyArea');
-  
+          8, '#FCACAA'],
+        'fill-opacity': 0}
+    }, '02-studyArea');  
   map.addLayer(
-    { id: '14-hot',
+    { id: '13-hot-map',
       source:  {
         type: 'geojson',
-        data: './data/nycc_heatmap.geojson',
-      },
+        data: './data/nycc_heatmap.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
@@ -411,103 +357,97 @@ map.on('load', function () {
           5, '#FCDCAA',
           6, '#FCCDAA',
           7, '#FCBCAA',
-          8, '#FCACAA',
-        ],
-        'fill-opacity': 0,
-      }
+          8, '#FCACAA'],
+        'fill-opacity': 0}
     }, '02-studyArea');
 
-    map.addLayer(
-      { id: '15-canopy',
-        source: {
-          type: 'geojson',
-          data: './data/oti_treeCanopy.geojson'
-        },
-        type: 'fill',
-        paint: {
-          'fill-color': '#008000',
-          'fill-opacity': 0,
-        }
-      });
-
-    map.addLayer(
-      { id: '16-canopy-linden',
-        source: {
-          type: 'geojson',
-          data: './data/oti_treeCanopy.geojson'
-        },
-        type: 'fill',
-        paint: {
-          'fill-color': [
-            'interpolate', ['linear'], 
-            ['get', 'OBJECTID'],
-            1, 'transparent', 
-            2, 'transparent',
-            3, '#008000',
-            4, 'transparent',
-          ],
-          'fill-opacity': 0,
-        }
-      });
-  
-    map.addLayer(
-      { id: '17-canopy-eastern',
-        source: {
-          type: 'geojson',
-          data: './data/oti_treeCanopy.geojson'
-        },
-        type: 'fill',
-        paint: {
-          'fill-color': [
-            'interpolate', ['linear'], 
-            ['get', 'OBJECTID'],
-            1, 'transparent', 
-            2, '#008000',
-            3, 'transparent',
-            4, 'transparent',
-          ],
-          'fill-opacity': 0,
-        }
-      });
-
-      map.addLayer(
-        { id: '18-flood1',
-          source: {
-            type: 'geojson',
-            data: './data/high-tide-deep-flood.geojson'
-          },
-          buffer: 0,
-          minzoom: 10,
-          maxzoom: 13,
-          type: 'fill',
-          paint: {
-            'fill-color': [
-              'interpolate', ['linear'], 
-              ['get', 'OBJECTID'],
-              2, '#00A9E6',
-              3, '#004C73',
-            ],
-            'fill-opacity': 0,
-          }
-        });
-
   map.addLayer(
-    { id: '20-stroads-flood',
+    { id: '14-canopy',
       source: {
         type: 'geojson',
-        data: '../data/stroads.geojson',
-      },
+        data: './data/oti_treeCanopy.geojson'},
+      type: 'fill',
+      paint: {
+        'fill-color': '#008000',
+        'fill-opacity': 0}
+    });
+  map.addLayer(
+    { id: '15-canopy-linden',
+      source: {
+        type: 'geojson',
+        data: './data/oti_treeCanopy.geojson'},
+      type: 'fill',
+      paint: {
+        'fill-color': [
+          'interpolate', ['linear'], 
+          ['get', 'OBJECTID'],
+          1, 'transparent', 
+          2, 'transparent',
+          3, '#008000',
+          4, 'transparent'],
+        'fill-opacity': 0}
+     });  
+  map.addLayer(
+    { id: '16-canopy-eastern',
+      source: {
+        type: 'geojson',
+        data: './data/oti_treeCanopy.geojson'},
+      type: 'fill',
+      paint: {
+        'fill-color': [
+          'interpolate', ['linear'], 
+          ['get', 'OBJECTID'],
+          1, 'transparent', 
+          2, '#008000',
+          3, 'transparent',
+          4, 'transparent'],
+        'fill-opacity': 0}
+    });
+
+  map.addLayer(
+    { id: '17-flood1',
+      source: {
+        type: 'geojson',
+        data: './data/high-tide-deep-flood.geojson'},
+      buffer: 0,
+      minzoom: 7,
+      maxzoom: 14,
+      type: 'fill',
+      paint: {
+        'fill-color': [
+          'interpolate', ['linear'], 
+          ['get', 'OBJECTID'],
+          2, '#00A9E6',
+          3, '#004C73'],
+        'fill-opacity': 0}
+    });
+  map.addLayer(
+    { id: '18-flood2',
+      source: {
+        type: 'geojson',
+        data: './data/nuisance-flood.geojson'},
+      buffer: 0,
+      minzoom: 7,
+      maxzoom: 14,
+      type: 'fill',
+      paint: {
+        'fill-color': '#73DFFF',
+        'fill-opacity': 0}
+    });
+  map.addLayer(
+    { id: '19-stroads-flood',
+      source: {
+        type: 'geojson',
+        data: '../data/stroads.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
           'case',
           ['==', ['get', 'pct_flood_20'], null],
           'transparent',
-          ['step', ['get', 'pct_flood_20'], 'transparent', 1, '#f35d17'],
-        ],
-        'fill-opacity': 0,
-      }
-    }); 
+          ['step', ['get', 'pct_flood_20'], 'transparent', 1, '#f35d17']],
+        'fill-opacity': 0}
+    });
 
   scroller
     .setup({

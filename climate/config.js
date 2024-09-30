@@ -73,15 +73,15 @@ var config = {
         { layer: '02-studyArea',
           opacity: 0,
         },
-        { layer: '13-heat-map',
+        { layer: '12-heat-map',
           opacity: .75,
         },
-        { layer: '14-hot',
+        { layer: '13-hot-map',
           opacity: 0,
         },
       ],
       onChapterExit: [
-        { layer: '13-heat-map',
+        { layer: '12-heat-map',
           opacity: 0,
         },
       ]
@@ -104,7 +104,7 @@ var config = {
         { layer: '02-studyArea',
           opacity: 1,
         },
-        { layer: '14-hot',
+        { layer: '13-hot-map',
           opacity: .75,
         },
       ],
@@ -124,13 +124,9 @@ var config = {
         zoom: 13,
         zoomSmall: 12,
       },
-      onChapterEnter: [
-        { layer: '14-hot',
-          opacity: .75,
-        },
-      ],
+      onChapterEnter: [],
       onChapterExit: [
-        { layer: '14-hot',
+        { layer: '13-hot-map',
           opacity: 0,
         },
       ],
@@ -191,7 +187,10 @@ var config = {
         zoomSmall: 7,
       },
       onChapterEnter: [
-        { layer: '18-flood1',
+        { layer: '17-flood1',
+          opacity: 0,
+        },
+        { layer: '18-flood2',
           opacity: 0,
         },
       ],
@@ -199,21 +198,28 @@ var config = {
     },
 
     { id: 'env-08',
-      alignment: 'centered',
+      alignment: 'left',
       hidden: false,
       chapterDiv: 
       '<p>Like heat, nuisance and stormwater-related flooding are becoming more frequent and intense in New York City. According to the <a href="https://nyaspubs.onlinelibrary.wiley.com/doi/10.1111/nyas.15116" target="_blank">New York City Panel on Climate Change</a>, average precipitation is expected to increase by four to 11 percent between now and 2050.</p>'
-      +'<p>Hurricane Sandy was a wakeup call to protect the city’s coasts from storm surge, but recent and unprecedented cloudburst events have revealed the flooding vulnerability of the entire city, <a href="https://www.nyc.gov/site/dep/whats-new/resilient-nyc-partners.page" target="_blank">more than 70 percent of which</a> is impervious. During Hurricane Ida in 2021, some areas of the city received 3.75 inches per hour&mdash;more than twice the maximum sewer capacity.</p>',
+      +'<p>Hurricane Sandy was a wakeup call to protect the city’s coasts from storm surge, but recent and unprecedented cloudburst events have revealed the flooding vulnerability of the entire city, <a href="https://www.nyc.gov/site/dep/whats-new/resilient-nyc-partners.page" target="_blank">more than 70 percent of which</a> is impervious. During Hurricane Ida in 2021, some areas of the city received 3.75 inches per hour&mdash;more than twice the maximum sewer capacity.</p>'
+      +'<br><dl><dt><strong>Legend: Extreme Stormwater Flooding Scenario with 2080s Sea Level Rise (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</strong></dt>'        
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Nuisance Flooding</dd>'
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Deep & Contiguous Flooding</dd>'
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#004C73" /></svg>Future High Tides</dd></dl>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
         zoomSmall: 7,
       },
       onChapterEnter: [
-        { layer: '18-flood1',
+        { layer: '17-flood1',
           opacity: 1,
         },
-        { layer: '20-stroads-flood',
+        { layer: '18-flood2',
+          opacity: 1,
+        },
+        { layer: '19-stroads-flood',
           opacity: 0,
         },
       ],
@@ -221,17 +227,22 @@ var config = {
     },
 
     { id: 'env-09',
-      alignment: 'centered',
+      alignment: 'left',
       hidden: false,
       chapterDiv: 
-      '<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors. Roughly 80% of Neptune and Surf Avenues would be underwater in an extreme stormwater flood, for example.</p>',
+      '<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors. Roughly 80% of Neptune and Surf Avenues would be underwater in an extreme stormwater flood, for example.</p>'
+      +'<br><dl><dt><strong>Legend: Extreme Stormwater Flooding Scenario with 2080s Sea Level Rise (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</strong></dt>'        
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Nuisance Flooding</dd>'
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Deep & Contiguous Flooding</dd>'
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#004C73" /></svg>Future High Tides</dd>'
+        +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads where at least 20% of right of way is affected in extreme scenarios</dd></dl>',
       location: {
         center: [-74.00316, 40.70554],
         zoom: 11,
         zoomSmall: 8,
       },
       onChapterEnter: [
-        { layer: '20-stroads-flood',
+        { layer: '19-stroads-flood',
           opacity: 1,
         },
       ],
@@ -239,7 +250,7 @@ var config = {
     },
     
     { id: 'env-10',
-      alignment: 'centered',
+      alignment: 'left',
       hidden: false,
       chapterDiv: 
       '<p>The stakes are particularly high for stroads because they are such important transportation corridors. Highly trafficked stroads and large surface parking areas generate significant amounts of pollutants (such as metals, hydrocarbons, bacteria, and excess sediments) that run off and pollute the region’s water bodies because they are unable to be absorbed into impermeable ground. The impact is amplified in New York City, where the right-of-way comprises roughly 28 percent of all combined sewer overflow drainage areas, more area than any other type of City-managed land.</p>'
@@ -248,15 +259,15 @@ var config = {
         +'<figcaption>Flatbush Avenue was inundated with floodwater caused by Tropical Storm Ophelia in 2023. Photo: Wikimedia Commons, Wil540 art.</figcaption></figure>',
       location: {
         center: [-74, 40.73800],
-        zoom: 10.3,
-        zoomSmall: 7.25,
+        zoom: 11,
+        zoomSmall: 8,
       },
       onChapterEnter: [],
       onChapterExit: [],
     },
 
     { id: 'env-11',
-      alignment: 'centered',
+      alignment: 'left',
       hidden: false,
       chapterDiv: 
       '<figure>'
@@ -275,10 +286,13 @@ var config = {
         },
       ],
       onChapterExit: [
-        { layer: '18-flood1',
+        { layer: '17-flood1',
           opacity: 0,
         },
-        { layer: '20-stroads-flood',
+        { layer: '18-flood2',
+          opacity: 0,
+        },
+        { layer: '19-stroads-flood',
           opacity: 0,
         },
       ],
@@ -299,7 +313,7 @@ var config = {
         zoomSmall: 7.25,
       },
       onChapterEnter: [
-        { layer: '15-canopy',
+        { layer: '14-canopy',
           opacity: 0,
         },
       ],
@@ -317,15 +331,15 @@ var config = {
         zoomSmall: 11.5,
       },
       onChapterEnter: [
-        { layer: '15-canopy',
+        { layer: '14-canopy',
           opacity: 1,
         },
-        { layer: '16-canopy-linden',
+        { layer: '15-canopy-linden',
           opacity: 0,
         },
       ],
       onChapterExit: [
-        { layer: '15-canopy',
+        { layer: '14-canopy',
           opacity: 0,
         },
       ],
@@ -348,15 +362,15 @@ var config = {
         zoomSmall: 12,
       },
       onChapterEnter: [
-        { layer: '16-canopy-linden',
+        { layer: '15-canopy-linden',
           opacity: 1,
         },
-        { layer: '17-canopy-eastern',
+        { layer: '16-canopy-eastern',
           opacity: 0,
         },
       ],
       onChapterExit: [
-        { layer: '16-canopy-linden',
+        { layer: '15-canopy-linden',
           opacity: 0,
         },
       ],
@@ -378,12 +392,12 @@ var config = {
         zoomSmall: 12,
       },
       onChapterEnter: [
-        { layer: '17-canopy-eastern',
+        { layer: '16-canopy-eastern',
           opacity: 1,
         },
       ],
       onChapterExit: [
-        { layer: '17-canopy-eastern',
+        { layer: '16-canopy-eastern',
           opacity: 0,
         },
       ],
