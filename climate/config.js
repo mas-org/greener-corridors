@@ -34,8 +34,8 @@ var config = {
       alignment: "centered",
       hidden: false,
       chapterDiv: 
-      '<p>With climate change, cities are encountering the “urban heat island” effect with greater intensity, wherein the urban environment experiences hotter temperatures than outlying areas. The difference largely stems from the concentration of manmade surfaces in cities, like concrete, asphalt, and brick, that absorb and retain heat.</p>'
-      +'<p>According to a 2023 <a href="https://www.climatecentral.org/climate-matters/urban-heat-islands-2023" target="_blank">report by  Climate Central</a>, New York City has the greatest urban heat island effect of any major U.S. city, with temperatures nearly 10 degrees hotter for the average resident than they would otherwise be. Residents of New York City’s environmental justice (EJ) areas, the focus of our study, are more likely to experience socioeconomic, health, and environmental disparities, including limited access to green space and climate-controlled spaces, that make them more vulnerable to extreme heat. According to the <a href="https://climate.cityofnewyork.us/ht/ejnyc-report/the-state-of-environmental-justice-in-nyc/exposure-to-climate-change/" target="_blank">Mayor’s Office of Climate & Environmental Justice (MOCEJ)</a>, for example, nine of the top ten neighborhoods in New York with the lowest rates of air conditioning at home are EJ neighborhoods. The result is that <a href="https://a816-dohbesp.nyc.gov/IndicatorPublic/data-stories/urban-heat-island/" target="_blank">more people die from extreme heat</a> (about 350 annually) in New York City than from all other natural disasters combined.</p>'
+      '<p>As the effects of climate change intensify, cities are confronting the “urban heat island effect” with greater frequency and severity, wherein the urban environment experiences hotter temperatures than outlying areas. The difference largely stems from the concentration of manmade surfaces in cities, like concrete, asphalt, and brick, that absorb and retain heat.</p>'
+      +'<p>According to a 2023 <a href="https://www.climatecentral.org/climate-matters/urban-heat-islands-2023" target="_blank">report by  Climate Central</a>, New York City has the greatest urban heat island effect of any major U.S. city, with temperatures nearly 10 degrees hotter for the average resident than they would otherwise be. Residents of New York City’s environmental justice (EJ) areas, the focus of our study, are more likely to experience socioeconomic, health, and environmental disparities, including limited access to green space and climate-controlled spaces, that make them more vulnerable to extreme heat. According to the <a href="https://climate.cityofnewyork.us/ht/ejnyc-report/the-state-of-environmental-justice-in-nyc/exposure-to-climate-change/" target="_blank">Mayor’s Office of Climate & Environmental Justice (MOCEJ)</a>, for example, nine of the top 10 neighborhoods in New York with the lowest rates of home air conditioning are EJ neighborhoods. The result is that <a href="https://a816-dohbesp.nyc.gov/IndicatorPublic/data-features/heat-report/" target="_blank">more people die from extreme heat</a> (about 350 annually) in New York City than from all other natural disasters combined.</p>'
       +'<p>As we will explore in this post, New York City’s stroads (especially those in EJ areas) have the potential to be a major component of the city’s climate strategy, including heat mitigation.</p>'
       +'<figure>'
         +'<img src="./images/utica-ave-3.jpg" alt="Person walking down wide sidewalk between parking lot and empty road with no street furnishings except pole and hydrant">'
@@ -92,10 +92,10 @@ var config = {
       alignment: "left",
       hidden: false,
       chapterDiv: 
-      '<p>Virtually all of the more than 100 stroads we examined go through areas that were found to be hotter than the citywide average surface temperature. While many of these areas are industrial, most arterial corridors support many adjacent land uses that may be just as heat-intensive, from shops and apartments to parking lots and "big box" stores. The full scope of industrial impacts in particular is not known except on a site-by-site basis, but certain indicators point to the disproportionate impact on some communities. For example, MOCEJ reports that 58% of the city’s largest emitters of toxic material, as tracked by the federal Environmental Protection Agency, are located in EJ areas.</p>'
+      '<p>Virtually all of the more than 100 stroads we examined go through areas that were found to be hotter than the citywide average surface temperature. While many of these areas are industrial, most arterial corridors support many adjacent land uses that may be just as heat-intensive, from shops and apartments to parking lots and "big box" stores.</p>'
       +'<br><dl><dt><strong>Legend</strong></dt>'        
         +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads in Environmental Justice (EJ) Study Area</dd>'
-        +'<dd>Relative Average Temperature [+1&deg;F to +8&deg;F]:<br><svg height="14" width="50%"><defs><linearGradient id="grad2" x1="0%" x2="100%" y1="0%" y2="0%"><stop offset="0%" stop-color="#E3FEC6" /><stop offset="50%" stop-color="#FBECAB" /><stop offset="100%" stop-color="#FCACAA" /></linearGradient></defs><rect width="100%" height="100%" clip-path="url(#clip)" fill="url(#grad2)"/></svg></dd></dl>',
+        +'<dd>Relative Average Surface Temperature [+1&deg;F to +8&deg;F]:<br><svg height="14" width="50%"><defs><linearGradient id="grad2" x1="0%" x2="100%" y1="0%" y2="0%"><stop offset="0%" stop-color="#E3FEC6" /><stop offset="50%" stop-color="#FBECAB" /><stop offset="100%" stop-color="#FCACAA" /></linearGradient></defs><rect width="100%" height="100%" clip-path="url(#clip)" fill="url(#grad2)"/></svg></dd></dl>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
@@ -116,10 +116,10 @@ var config = {
       alignment: 'full',
       hidden: false,
       chapterDiv: 
-      '<p>Perhaps nowhere is this more apparent than in Jamaica, where Jamaica Avenue, Liberty Avenue, Merrick Boulevard, and several other stroads go through an area that is more than five degrees hotter on average than the rest of the city. The stroads cluster around Downtown Jamaica, a dense commercial center that is New York City’s busiest bus hub and the convergence of subway, Long Island Rail Road, and JFK Air Trains. Whereas Jamaica Avenue is primarily a commercial corridor with one and two-story shops and the occasional office tower, Liberty Avenue is home to single-story warehouses, auto repair businesses, parking lots, and vacant land. Merrick Boulevard is more of a mix of the two.</p>'
-       +'<p>[IMAGE - Jamaica Ave]</p>'
-      +'<p>[IMAGE - Liberty Ave]</p>'
-      +'<p>[IMAGE - Merrick Blvd]</p>',
+      '<figure>'
+        +'<img src="./images/jamaica-1.jpg" alt="Roadway at intersection of 173rd Street and Jamaica Avenue, a commerical corridor with three lanes each way">'
+        +'<figcaption>Jamaica Avenue goes through one of the hottest areas of the city. There are few trees, partly because of siting constraints. Photo: Rawnak Zaman.</figcaption></figure>'
+      +'<p>Perhaps nowhere is this more apparent than in Jamaica, where Jamaica Avenue, Liberty Avenue, Merrick Boulevard, and several other stroads go through an area that is more than five degrees hotter on average than the rest of the city. The stroads cluster around Downtown Jamaica, a dense commercial center that is New York City’s busiest bus hub and the convergence of subway, Long Island Rail Road, and JFK Air Trains. Whereas Jamaica Avenue is primarily a commercial corridor with one and two-story shops and the occasional office tower, Liberty Avenue is home to single-story warehouses, auto repair businesses, parking lots, and vacant land. Merrick Boulevard is more of a mix of the two.</p>',
       location: {
         center: [-73.80246, 40.69182],
         zoom: 13,
@@ -141,10 +141,7 @@ var config = {
       alignment: 'full',
       hidden: false,
       chapterDiv: 
-      '<figure>'
-        +'<img src="./images/jamaica-1.jpg" alt="Roadway at intersection of 173rd Street and Jamaica Avenue, a commerical corridor with three lanes each way">'
-        +'<figcaption>Jamaica Avenue goes through one of the hottest areas of the city. There are few trees, partly because of siting constraints. Photo: Rawnak Zaman.</figcaption></figure>'
-      +'<p>There is only one substantial park in the vicinity (Rufus King Park), and the community district ranks <a href="https://www.ny4p.org/client-uploads/pdf/District-Profiles-2021/NY4P-Profiles_QN12.pdf" target="_blank">49th out of 59 community districts</a> citywide in terms of available park space, with just 1.1 acres per thousand residents compared with the median citywide ratio of 1.5. Each corridor also lacks mature and consistent tree canopy, a topic we will explore later in greater detail.</p>',
+      '<p>There is only one substantial park in the vicinity (Rufus King Park), and the community district ranks <a href="https://www.ny4p.org/client-uploads/pdf/District-Profiles-2021/NY4P-Profiles_QN12.pdf" target="_blank">49th out of 59 community districts</a> citywide in terms of available park space, with just 1.1 acres per thousand residents compared with the median citywide ratio of 1.5. Each corridor also lacks mature and consistent tree canopy, a topic we will explore later in greater detail.</p>',
       location: {
         center: [-73.80366, 40.70373],
         zoom: 16,
@@ -181,7 +178,7 @@ var config = {
       hidden: false,
       chapterDiv:
       '<p>Unfortunately, most people must encounter stroads because they are major transportation corridors and local and big box shopping destinations. A 2024 <a href="https://projects.transalt.org/new-york-city-bus-urban-heat" target="_blank">study by Transportation Alternatives</a> identified 100 of New York City’s hottest bus stops, where average temperatures are up to 14.5 degrees warmer than the coolest bus stops. A quarter of them are located along 11 stroads within the city’s EJ areas: Springfield Boulevard in Queens; Kings Highway, Norstrand Avenue, and Utica Avenue in Brooklyn; and Edgewater Road, East 138th Street, 233rd Street, Eastchester Road, Grand Concourse, Webster Avenue, and Westchester Avenue in the Bronx.</p>'
-      +'<p>Heat then, has a major impact on people’s lived experiences when it comes to these spaces. In places like Jamaica, where the City is leading an effort with the community to rezone several arterial corridors, there is an imperative to utilize the neighborhood’s tangle of stroads as a key solution to urban heat.</p>'
+      +'<p>Heat then, has a major impact on people’s lived experiences when it comes to these spaces. In places like Jamaica, where the City is leading an effort with the community to rezone several arterial corridors, it is imperative to utilize the neighborhood’s tangle of stroads as a key solution to urban heat.</p>'
       +'<figure>'
         +'<img src="./images/jamaica-2.jpg" alt="Archer Avenue bus lanes">'
         +'<figcaption>Downtown Jamaica has more than 45 different bus routes along corridors like Archer Avenue where heat is omnipresent. Photo: Rawnak Zaman.</figcaption></figure>',
@@ -299,8 +296,11 @@ var config = {
       alignment: 'left',
       hidden: false,
       chapterDiv: 
-      '<p>The City has been installing cloudburst infrastructure in areas that are within priority sewer sheds, socially vulnerable neighborhoods, and where interagency infrastructure projects and ecological connectivity priorities align. Green infrastructure tends to be clustered in certain geographic areas rather than equally dispersed throughout the city or along certain corridors. According to the Department of Environmental Protection, about 90 percent of green infrastructure has been installed in environmental justice neighborhoods.</p>'
-      +'<p>Nevertheless, there are places where the City has taken a corridor approach to green infrastructure investment. <mark>[Example]</mark></p>',
+      '<figure>'
+        +'<img src="./images/beach-108.jpg" alt="Beach 108th Street in Rockaway, Queens.">'
+        +'<figcaption>Beach 108th Street in Rockaway, Queens, whose transportation and stormwater infrastructure was rebuilt as part of an interagency effort. Photo: New York City Department of Design and Construction.</figcaption></figure>'
+      +'<p>The City has been installing cloudburst infrastructure in areas that are within priority sewer sheds, socially vulnerable neighborhoods, and where interagency infrastructure projects and ecological connectivity priorities align. According to the Department of Environmental Protection (DEP), about 90 percent of green infrastructure has been installed in environmental justice neighborhoods.</p>'
+      +'<p>There are several places where the City has taken a corridor approach to green infrastructure investment. Last year, for example, DEP, along with the Department of Transportation, Department of Design and Construction, MOCEJ, Councilmember Joann Ariola, and the New York State Office of Resilient Homes and Communities, completed a $16.6 million infrastructure project that rebuilt Beach 108th Street in Rockaway, Queens. While Beach 108th Street is not a major arterial corridor, the project nonetheless demonstrates the potential for wholesale improvement when interagency priorities and resources align. Beach 108th Street now has new trees, sidewalks, benches, bike lanes, storm sewers, catch basins, and porous pavement that can absorb nearly 1.3 million gallons of stormwater into the ground each year.</p>',
       location: {
         center: [-73.829391, 40.581169],
         zoom: 13,
@@ -384,7 +384,7 @@ var config = {
       '<figure>'
         +'<img src="./images/linden-blvd.png" alt="Three lane road sandwiched by plain medians with no furnishing">'
         +'<figcaption>Linden Boulevard. Photo: Google Street View, 2022.</figcaption></figure>'
-      +'<p>Linden Boulevard stretches nearly four miles between Ozone Park, Queens and Flatbush, Brooklyn, near the southeast corner of Prospect Park. The highly trafficked thoroughfare primarily goes through lower-income residential areas, and while the western portion narrows to two-lane traffic, the bulk of the thoroughfare consists of 10 combined travel and parking lanes separated by three medians. Where it cuts through East New York, one of the city’s poorest neighborhoods, the corridor area experiences significantly higher than average surface temperatures and flooding issues.</p>'
+      +'<p>The busiest portion of Linden Boulevard stretches about six miles between Ozone Park, Queens and Flatbush, Brooklyn, near the southeast corner of Prospect Park. The highly trafficked thoroughfare primarily goes through lower-income residential areas, and while the westernmost portion narrows to two-lane traffic, the bulk of the thoroughfare consists of 10 combined travel and parking lanes separated by three medians. Where it cuts through East New York, one of the city’s poorest neighborhoods, the corridor experiences significantly higher than average surface temperatures and flooding issues.</p>'
       +'<p>Yet Linden Boulevard’s “sidewalk furnishing zone,” a portion of the sidewalk where most street trees are planted, only contains sporadic trees. The same is true of the corridor’s bare medians, whose total concrete width spans nearly 30 feet in some sections.</p>'
       +'<br><br><dl><dt><strong>Legend</strong></dt>'
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
@@ -408,7 +408,7 @@ var config = {
       '<figure>'
         +'<img src="./images/eastern-pkwy.png" alt="Verdant roadway">'
         +'<figcaption>Eastern Parkway between Bedford and Franklin Avenues. In 2024, the block was named second greenest in Brooklyn by the Brooklyn Botanic Garden. Photo: Google Street View, 2022.</figcaption></figure>'
-      +'<p>Eastern Parkway, located just one mile south, is a completely different story despite handling virtually the same amount of traffic as Linden Boulevard. Designed by Frederick Law Olmstead and Calvert Vaux in the late-1800’s to connect Brooklyn neighborhoods (including Crown Heights and East New York, both EJ areas today) to Prospect Park, the three-mile, primarily residential corridor features lush tree-lined medians, bike paths, and benches. While the right of way is up to 40 feet wider than Linden Boulevard, the street and its adjacent land have twice as much tree canopy coverage and much lower surface temperatures. And all of this rests above two of the busiest subway lines in the city.</p>'
+      +'<p>Eastern Parkway, located just one mile north, is a completely different story despite handling a similar amount of traffic as Linden Boulevard. Designed by Frederick Law Olmstead and Calvert Vaux in the late-1800’s to connect Brooklyn neighborhoods (including Crown Heights and East New York, both EJ areas today) to Prospect Park, most of the four-mile, primarily residential corridor features lush tree-lined medians, bike paths, and benches. While the right of way is up to 40 feet wider than Linden Boulevard, the street and its adjacent land have twice as much tree canopy coverage and much lower surface temperatures. And all of this rests above two of the busiest subway lines in the city.</p>'
       +'<br><br><dl><dt><strong>Legend</strong></dt>'
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
       location: {
@@ -432,10 +432,10 @@ var config = {
       alignment: 'centered',
       hidden: false,
       chapterDiv: 
-      '<p>The need to work around restrictive siting constraints undoubtedly explains the lack of vegetation in some areas. For example, the New York City Department of Parks and Recreation stipulates that street trees must be planted a certain distance from building entrances, curb cuts, bus stops, streetlights, traffic signs, and water mains, ruling out much of the sidewalk space on many blocks. There are also maintenance, tree species, and soil considerations as well as disturbances and stressors (such as storms, pollution, and pests) that make it difficult for trees to survive.</p>'
+      '<p>The need to work around restrictive siting constraints undoubtedly explains the lack of vegetation in some areas. For example, the New York City Department of Parks and Recreation stipulates that street trees must be planted a certain distance from building entrances, curb cuts, bus stops, streetlights, traffic signs, and water mains, ruling out much of the sidewalk space on many blocks, especially in commercial areas. There are also maintenance, tree species, and soil considerations as well as disturbances and stressors (such as storms, pollution, and pests) that make it difficult for trees to survive.</p>'
       +'<figure>'
         +'<img src="./images/dot-landscape-clearance-diagram.png" alt="Diagram">'
-        +'<figcaption>From NYC Department of Transportation’s <a href="https://www.nycstreetdesign.info/" target="_blank">Street Design Manual</a> (2020).</figcaption></figure>',
+        +'<figcaption>Landscape clearance diagram from the NYC Department of Transportation’s <a href="https://www.nycstreetdesign.info/" target="_blank">Street Design Manual</a> (2020).</figcaption></figure>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.2,
