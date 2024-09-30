@@ -277,23 +277,6 @@ map.on('load', function () {
     });
 
   map.addLayer(
-    { id: '17-flood1',
-      source: {
-        type: 'geojson',
-        data: './data/high-tide-deep-flood.geojson'},
-      buffer: 0,
-      minzoom: 7,
-      maxzoom: 14,
-      type: 'fill',
-      paint: {
-        'fill-color': [
-          'interpolate', ['linear'], 
-          ['get', 'OBJECTID'],
-          2, '#00A9E6',
-          3, '#004C73'],
-        'fill-opacity': 0}
-    });
-  map.addLayer(
     { id: '18-flood2',
       source: {
         type: 'geojson',

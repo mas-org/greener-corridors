@@ -187,9 +187,6 @@ var config = {
         zoomSmall: 7,
       },
       onChapterEnter: [
-        { layer: '17-flood1',
-          opacity: 0,
-        },
         { layer: '18-flood2',
           opacity: 0,
         },
@@ -204,18 +201,13 @@ var config = {
       '<p>Like heat, nuisance and stormwater-related flooding are becoming more frequent and intense in New York City. According to the <a href="https://nyaspubs.onlinelibrary.wiley.com/doi/10.1111/nyas.15116" target="_blank">New York City Panel on Climate Change</a>, average precipitation is expected to increase by four to 11 percent between now and 2050.</p>'
       +'<p>Hurricane Sandy was a wakeup call to protect the city’s coasts from storm surge, but recent and unprecedented cloudburst events have revealed the flooding vulnerability of the entire city, <a href="https://www.nyc.gov/site/dep/whats-new/resilient-nyc-partners.page" target="_blank">more than 70 percent of which</a> is impervious. During Hurricane Ida in 2021, some areas of the city received 3.75 inches per hour&mdash;more than twice the maximum sewer capacity.</p>'
       +'<br><dl><dt><strong>Legend: Extreme Stormwater Flooding Scenario with 2080s Sea Level Rise (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</strong></dt>'        
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Nuisance Flooding</dd>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Deep & Contiguous Flooding</dd>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#004C73" /></svg>Future High Tides</dd></dl>',
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Nuisance Flooding</dd></dl>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
         zoomSmall: 7,
       },
       onChapterEnter: [
-        { layer: '17-flood1',
-          opacity: 1,
-        },
         { layer: '18-flood2',
           opacity: 1,
         },
@@ -233,8 +225,6 @@ var config = {
       '<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors. Roughly 80% of Neptune and Surf Avenues would be underwater in an extreme stormwater flood, for example.</p>'
       +'<br><dl><dt><strong>Legend: Extreme Stormwater Flooding Scenario with 2080s Sea Level Rise (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</strong></dt>'        
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Nuisance Flooding</dd>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Deep & Contiguous Flooding</dd>'
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#004C73" /></svg>Future High Tides</dd>'
         +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads where at least 20% of right of way is affected in extreme scenarios</dd></dl>',
       location: {
         center: [-74.00316, 40.70554],
@@ -286,9 +276,6 @@ var config = {
         },
       ],
       onChapterExit: [
-        { layer: '17-flood1',
-          opacity: 0,
-        },
         { layer: '18-flood2',
           opacity: 0,
         },
@@ -321,10 +308,12 @@ var config = {
     },
 
     { id: "env-13",
-      alignment: "centered",
+      alignment: "left",
       hidden: false,
       chapterDiv:
-      '<p class="p-wide">There are dozens of stroads that extend for miles in each borough with little tree canopy, such as Boston Road, Queens Boulevard, and Utica Avenue. In areas like East Flatbush, which lacks tree canopy compared with other neighborhoods, the absence of vegetation along streets like Utica Avenue has a greater local impact. Taking a closer look at two examples helps illustrate these disparities.</p>',
+      '<p class="p-wide">There are dozens of stroads that extend for miles in each borough with little tree canopy, such as Boston Road, Queens Boulevard, and Utica Avenue. In areas like East Flatbush, which lacks tree canopy compared with other neighborhoods, the absence of vegetation along streets like Utica Avenue has a greater local impact. Taking a closer look at two examples helps illustrate these disparities.</p>'
+      +'<br><dl><dt><strong>Legend</strong></dt>'
+      +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
       location: {
         center: [-73.93707, 40.66732],
         zoom: 12.5,
