@@ -6,14 +6,15 @@ let subtitleDiv =
 '<h2>Issues & Opportunities</h2><p></p>';
 
 let bylineDiv = 
-'<p class="p-header"><a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">Greener Corridors</a> examines New York City’s largest arterial thoroughfares as an opportunity to create more livable, efficient, and green public spaces. As a mix of urban street (where people live and shop) and road (designed to quickly move large volumes of through-traffic), such corridors are sometimes referred to as “<a href="https://www.planetizen.com/news/2024/05/129032-stroads-worst-both-worlds" target="_blank">stroads</a>” in urban planning circles. This street-road mix is often incompatible, and stroads are frequently criticized for being inefficient, unappealing, dangerous, and too focused on through-movement at the expense of walkable environments that foster a sense of place. This storymap series takes a deeper look at the spatial relationship between these thoroughfares and mobility, sustainability, and land use issues to better understand where and how these corridors might be improved.</p><br>'
+'<p class="p-header"><a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">Greener Corridors</a> examines New York City’s largest arterial thoroughfares as opportunities to create more livable, efficient, and green public spaces. As a mix of urban street (where people live and shop) and road (designed to quickly move large volumes of through-traffic), such corridors are sometimes referred to as “<a href="https://www.planetizen.com/news/2024/05/129032-stroads-worst-both-worlds" target="_blank">stroads</a>” in urban planning circles. This street-road mix is often incompatible, and stroads are frequently criticized for being inefficient, unappealing, dangerously designed, and too focused on through-movement at the expense of walkable environments that foster a sense of place. This storymap series takes a deeper look at the spatial relationship between these thoroughfares and mobility, sustainability, and land use issues to better understand where and how these corridors might be improved.</p><br>'
 +'<div class="row">' 
-  +'<div class="column"><h1><mark>PART 1</mark></h1></div>'
-  +'<div class="column"></div>'
-  +'<div class="column"></div></div><br><hr>'
+  +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/built-for-auto/">1. Mobility</a></h1></div>'
+  +'<div class="column"><h1><mark>2. Climate</mark></h1></div>'
+  +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/policy-map/">3. Policy Map</a></h1></div>'
+  +'</div><br><hr>'
 +'<div class="container">'
   +'<img src="../images/cover02.jpg" alt="Cars parked on sidewalk in front of autorepair shop" width=100%>'
-  +'<div class="top-left"><h1 style="color:white">Part 1</h1><h2 style="color:white">Built for the Automobile</h2></div>'
+  +'<div class="top-left"><h1 style="color:white">1. Mobility</h1><h2 style="color:white">Built for the Automobile</h2></div>'
 +'<figcaption>Atlantic Avenue in Brooklyn. Photo: Kade Van Meeteren.</figcaption>';
 
 let footerDiv = 
@@ -72,7 +73,7 @@ var config = {
       alignment: "centered",
       hidden: false,
       chapterDiv: 
-      '<p class="p-wie">For too long, these corridors have been viewed by planners with one primary motive: to move as much vehicle traffic as quickly as possible through these communities.</p>'
+      '<p>For too long, these corridors have been viewed by planners with one primary motive: to move as much vehicle traffic as quickly as possible through these communities.</p>'
       +'<figure>'
         +'<img src="./images/atlantic-ave-1.jpg" alt="Person leaning against traffic light pole on median as cars pass in either direction" width=100%>'
         +'<figcaption>Much of Atlantic Avenue consists of six vehicle lanes and 800-foot distances between crosswalks, which leads pedestrians to walk along dangerous medians not intended for such travel. Photo: Kade Van Meeteren.</figcaption></figure>',
@@ -96,7 +97,7 @@ var config = {
       alignment: "centered",
       hidden: false,
       chapterDiv: 
-      '<p class="p-center">That includes more than 120,000 trucks that enter and exit the city daily, primarily along the city’s arterials because most are designated as truck routes and connect to distribution centers and industrial areas. With the demand for goods only growing, freight in its many forms—such as package deliveries, construction services, and sanitation—will continue to coexist with other users of the street.</p>'
+      '<p>That includes more than 120,000 trucks that enter and exit the city daily, primarily along the city’s arterials because most are designated as truck routes and connect to distribution centers and industrial areas. With the demand for goods only growing, freight in its many forms—such as package deliveries, construction services, and sanitation—will continue to coexist with other users of the street. In fact, <a href="https://nycdotprojects.info/project/1848/overview" target="_blank">53% of all parcels</a> along truck routes are strictly residential in use.</p>'
       +'<figure>'
         +'<img src="./images/atlantic-ave-6.jpg" alt="Two trucks waiting at a stoplight" width=100%>'
         +'<figcaption>“[D]own on the ten-lane surface road beneath the [Gowanus] parkway, rumbled (from before dawn until after dark after the opening of the Brooklyn-Battery Tunnel flooded the area with freight traffic) regiments, brigades, divisions of huge tractor-trailer trucks, engines gunning and backfiring, horns blasting, brakes screeching...” &mdash;From Robert Caro’s <em>The Power Broker</em> on the impacts of Moses-era highway development on Brooklyn’s Third Avenue, which evokes similar impressions today. Photo: Kade Van Meeteran.</figcaption></figure>',
@@ -304,7 +305,7 @@ var config = {
       alignment: 'centered',
       hidden: false,
       chapterDiv: 
-      '<p class="p-center">Many stroads, however, remain unsettling spaces where drivers own the right-of-way, speeding and weaving their way through traffic and creating dangerous conditions for pedestrians, cyclists, and other drivers. Over the years, several of these thoroughfares, including Queens Boulevard and Atlantic Avenue, have been dubbed a <a href="https://gothamist.com/news/after-10-years-of-vision-zero-nyc-has-a-new-boulevard-of-death" target="_blank">“boulevard of death”</a> due to their high number of traffic fatalities.</p>'
+      '<p>Many stroads, however, remain unsettling spaces where drivers own the right-of-way, speeding and weaving their way through traffic and creating dangerous conditions for pedestrians, cyclists, and other drivers. Over the years, several of these thoroughfares, including Queens Boulevard and Atlantic Avenue, have been dubbed a <a href="https://gothamist.com/news/after-10-years-of-vision-zero-nyc-has-a-new-boulevard-of-death" target="_blank">“boulevard of death”</a> due to their high number of traffic fatalities.</p>'
       +'<figure>'
         +'<img src="./images/utica-ave-1.jpg" alt="Flickering NYPD traffic sign displays text:  Vision Zero" width=100%>'
         +'<figcaption>In 2014, New York City introduced Vision Zero with the goal of eliminating traffic-related deaths. A decade later, traffic fatalities have declined significantly in wealthier, whiter areas but not in many lower-income communities of color <em>(source: <a href="https://transalt.org/press-releases/transportation-alternatives-and-families-for-safe-streets-analyze-data-from-first-10-years-of-vision-zero" target="_blank">Transportation Alternatives</a>)</em>. Photo: Stephen Albonesi.</figcaption></figure>',
@@ -352,7 +353,7 @@ var config = {
       alignment: 'centered',
       hidden: false,
       chapterDiv:
-      '<p class="p-center">Stroad design and function that gives automobile drivers significant space and latitude also creates glaring inefficiencies that affect drivers and non-drivers alike.</p>',
+      '<p class="p-wide">Stroad design and function that gives automobile drivers significant space and latitude also creates glaring inefficiencies that affect drivers and non-drivers alike.</p>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
@@ -451,7 +452,7 @@ var config = {
       alignment: 'centered',
       hidden: false,
       chapterDiv: 
-      '<p class="p-center">Even on the sidewalk, pedestrians must routinely meander around large vehicles, automobile-related equipment, and daunting access roads to suburban-style shopping plazas, drive-throughs, and other neighboring properties that prevent safe passage. It leads to neighborhood spaces that people seek to avoid altogether and is at odds with how the City views many of these corridors in terms of function and experience.</p>',
+      '<p class="p-wide">Even on the sidewalk, pedestrians must routinely meander around large vehicles, automobile-related equipment, and daunting access roads to suburban-style shopping plazas, drive-throughs, and other neighboring properties that prevent safe passage. It leads to neighborhood spaces that people seek to avoid altogether and is at odds with how the City views many of these corridors in terms of function and experience.</p>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
@@ -497,7 +498,7 @@ var config = {
       alignment: 'full',
       hidden: false,
       chapterDiv: 
-      '<p class="p-center">Like this stretch of Atlantic Avenue in Crown Heights, which is a Neighborhood Corridor because it is intended to serve consistent pedestrian destinations.</p>'
+      '<p>Like this stretch of Atlantic Avenue in Crown Heights, which is a Neighborhood Corridor because it is intended to serve consistent pedestrian destinations.</p>'
       +'<figure>'
         +'<img src="./images/atlantic-ave-4.JPG" alt="Person walking past cars parked on sidewalk" width=100%>'
         +'<figcaption>Photo: Kade Van Meeteren.</figcaption></figure>',
@@ -518,7 +519,7 @@ var config = {
       alignment: 'full',
       hidden: false,
       chapterDiv: 
-      '<p class="p-center">And this section of Utica Avenue in East Flatbush also has the demand factors that characterize a Neighborhood Corridor.</p>'
+      '<p>And this section of Utica Avenue in East Flatbush also has the demand factors that characterize a Neighborhood Corridor.</p>'
       +'<figure>'
         +'<img src="./images/utica-ave-2.jpg" alt="Multiple cars parked on sidewalk" width=100%>'
         +'<figcaption>Photo: Stephen Albonesi.</figcaption></figure>',
@@ -535,7 +536,7 @@ var config = {
       alignment: 'full',
       hidden: false,
       chapterDiv: 
-      '<p class="p-center">Or in the Allerton neighborhood of the Bronx, where portions of Boston Road designated as Community Connectors can feel like taking your life into your hands.</p>'
+      '<p>Or in the Allerton neighborhood of the Bronx, where portions of Boston Road designated as Community Connectors can feel like taking your life into your hands.</p>'
       +'<figure>'
         +'<img src="./images/boston-rd-3.jpg" alt="Low and mid-rise buildings near moderately busy road" width=100%>'
         +'<figcaption>Photo: Kade Van Meeteren.</figcaption></figure>',
@@ -558,8 +559,8 @@ var config = {
     { id: 'auto-20',
       alignment: 'centered',
       hidden: false,
-      chapterDiv: '<p class="p-center">Of course, even with available public transit, cities as dense as New York still need streets that can accommodate heavy amounts of vehicle traffic and their array of destinations. It is also important to acknowledge that the City is taking steps to address a number of the issues that plague these thoroughfares.</p>'
-      +'<p class="p-center">In addition to DOT’s Priority Corridors, many stroads have been designated as <a href="https://www.nyc.gov/html/visionzero/pages/initiatives/street-design.shtml" target="_blank">Vision Zero Arterial Slow Zones</a>, and <a href="https://www.nyc.gov/content/visionzero/pages/engineering" target="_blank">Great Streets</a> program investments along stroads like Queens Boulevard have made them significantly safer and more pleasant. Other City-led initiatives include new busway and curb management pilot programs, a provision in the City of Yes for Economic Opportunity text amendment to reduce pedestrian-automobile conflicts, and ongoing efforts to overhaul its truck route network and last-mile delivery system.</p>',
+      chapterDiv: '<p class="p-wide">Of course, even with available public transit, cities as dense as New York still need streets that can accommodate heavy amounts of vehicle traffic and their array of destinations. It is also important to acknowledge that the City is taking steps to address a number of the issues that plague these thoroughfares.</p>'
+      +'<p class="p-wide">In addition to DOT’s Priority Corridors, many stroads have been designated as <a href="https://www.nyc.gov/html/visionzero/pages/initiatives/street-design.shtml" target="_blank">Vision Zero Arterial Slow Zones</a>, and <a href="https://www.nyc.gov/content/visionzero/pages/engineering" target="_blank">Great Streets</a> program investments along stroads like Queens Boulevard have made them significantly safer and more pleasant. Other City-led initiatives include new busway and curb management pilot programs, a provision in the City of Yes for Economic Opportunity text amendment to reduce pedestrian-automobile conflicts, and ongoing efforts to overhaul its truck route network and last-mile delivery system.</p>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.3,
@@ -579,7 +580,8 @@ var config = {
     { id: 'auto-21',
       alignment: 'centered',
       hidden: false,
-      chapterDiv: '<p class="p-center">Yet even with ongoing and proposed improvements, these corridors are not being optimized to their full potential, with mobility being just one focus area. There is an opportunity to make stroads significantly greener in terms of trees and vegetation and to encourage more sustainable development. The need to leverage them is all the more urgent given the climate crisis and transportation’s role as the largest contributor to greenhouse gas emissions in the country. For those who have the choice of how to travel, dangerous, unpleasant, and car-oriented street conditions reinforce a vicious cycle where driving becomes the preferred option. In Part 2 of this storymap, we will explore issues of heat and flooding and opportunities to make these corridors more climate resilient.</p>'
+      chapterDiv: '<p>Yet even with ongoing and proposed improvements, these corridors are not being optimized to their full potential, with mobility being just one focus area. There is an opportunity to make stroads significantly greener in terms of trees and vegetation and to encourage more sustainable development. The need to leverage them is all the more urgent given the climate crisis and transportation’s role as the largest contributor to greenhouse gas emissions in the country. For those who have the choice of how to travel, dangerous, unpleasant, and car-oriented street conditions reinforce a vicious cycle where driving becomes the preferred option. In Part 2 of this storymap, we explore issues of heat and flooding and opportunities to make these corridors more climate resilient.</p>'
+      +'<h1 style="text-align:right"><a href="https://mas-org.github.io/greener-corridors/climate/">Go to Part 2</a></h1><br>'
       +'<figure>'
         +'<img src="./images/boston-rd-1.jpg" alt="Scooters left astride a sidewalk in front of an automotive business" width=100%>'
         +'<figcaption>The one-year East Bronx Shared E-Scooter Pilot expanded mobility options to East Bronx residents beginning in the summer 2021. Since then, more than 3.4 million trips have been taken. Boston Road was one of several thoroughfares that reported high scooter traffic volumes, suggesting the need for safer, designated lanes for micromobility users.</figcaption></figure>',
