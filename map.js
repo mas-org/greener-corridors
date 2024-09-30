@@ -470,6 +470,27 @@ map.on('load', function () {
         }
       });
 
+      map.addLayer(
+        { id: '18-flood1',
+          source: {
+            type: 'geojson',
+            data: './data/high-tide-deep-flood.geojson'
+          },
+          buffer: 0,
+          minzoom: 10,
+          maxzoom: 13,
+          type: 'fill',
+          paint: {
+            'fill-color': [
+              'interpolate', ['linear'], 
+              ['get', 'OBJECTID'],
+              2, '#00A9E6',
+              3, '#004C73',
+            ],
+            'fill-opacity': 0,
+          }
+        });
+
   map.addLayer(
     { id: '20-stroads-flood',
       source: {

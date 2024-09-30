@@ -169,7 +169,11 @@ var config = {
         zoomSmall: 15,
       },
       onChapterEnter: [],
-      onChapterExit: [],
+      onChapterExit: [
+        { layer: '02-studyArea',
+          opacity: 0,
+        },
+      ],
     },
 
     { id: "env-07",
@@ -186,12 +190,12 @@ var config = {
         zoom: 10.3,
         zoomSmall: 7,
       },
-      onChapterEnter: [],
-      onChapterExit: [
-        { layer: '02-studyArea',
+      onChapterEnter: [
+        { layer: '18-flood1',
           opacity: 0,
         },
       ],
+      onChapterExit: [],
     },
 
     { id: 'env-08',
@@ -206,6 +210,9 @@ var config = {
         zoomSmall: 7,
       },
       onChapterEnter: [
+        { layer: '18-flood1',
+          opacity: 1,
+        },
         { layer: '20-stroads-flood',
           opacity: 0,
         },
@@ -268,6 +275,9 @@ var config = {
         },
       ],
       onChapterExit: [
+        { layer: '18-flood1',
+          opacity: 0,
+        },
         { layer: '20-stroads-flood',
           opacity: 0,
         },

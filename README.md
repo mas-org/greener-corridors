@@ -37,6 +37,4 @@ We're using Github to host our Issues & Opportunities storymap series, which exp
 
 * NYC Department of Environmental Protection (DEP). (2024). _NYC Stormwater Flood Maps_. https://data.cityofnewyork.us/Environment/NYC-Stormwater-Flood-Maps/9i7c-xyvv/about_data
 
-* NYC Office of Technology and Innovation (OTI). (2017). _Land Cover Raster Data (2017) – 6in Resolution._ NYC Open Data. https://data.cityofnewyork.us/Environment/Land-Cover-Raster-Data-2017-6in-Resolution/he6d-2qns/about_data
-
 * NYC Office of Technology and Innovation (OTI). (2017). _Tree Canopy Change (2010 - 2017)._ NYC Open Data. https://data.cityofnewyork.us/Environment/Tree-Canopy-Change-2010-2017-/by9k-vhck/about_data
