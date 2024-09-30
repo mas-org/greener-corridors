@@ -144,7 +144,7 @@ var config = {
       },
       onChapterEnter: [
         { layer: '02-studyArea',
-          opacity: 1,
+          opacity: .85,
         },
       ],
       onChapterExit: [],
