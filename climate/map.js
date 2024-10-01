@@ -283,10 +283,10 @@ map.on('load', function () {
         data: './data/nuisance-flood.geojson'},
       buffer: 0,
       minzoom: 7,
-      maxzoom: 14,
+      maxzoom: 15,
       type: 'fill',
       paint: {
-        'fill-color': '#73DFFF',
+        'fill-color': '#00A9E6',
         'fill-opacity': 0}
     });
   map.addLayer(

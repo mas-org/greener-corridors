@@ -118,36 +118,23 @@ var config = {
       '<figure>'
         +'<img src="./images/jamaica-1.jpg" alt="Roadway at intersection of 173rd Street and Jamaica Avenue, a commerical corridor with three lanes each way">'
         +'<figcaption>Jamaica Avenue goes through one of the hottest areas of the city. There are few trees, partly because of siting constraints. Photo: Rawnak Zaman.</figcaption></figure>'
-      +'<p>Perhaps nowhere is this more apparent than in Jamaica, where Jamaica Avenue, Liberty Avenue, Merrick Boulevard, and several other stroads go through an area that is more than five degrees hotter on average than the rest of the city. The stroads cluster around Downtown Jamaica, a dense commercial center that is New York City’s busiest bus hub and the convergence of subway, Long Island Rail Road, and JFK Air Trains. Whereas Jamaica Avenue is primarily a commercial corridor with one and two-story shops and the occasional office tower, Liberty Avenue is home to single-story warehouses, auto repair businesses, parking lots, and vacant land. Merrick Boulevard is more of a mix of the two.</p>',
+      +'<p>Perhaps nowhere is this more apparent than in Jamaica, where Jamaica Avenue, Liberty Avenue, Merrick Boulevard, and several other stroads go through an area that is more than five degrees hotter on average than the rest of the city. The stroads cluster around Downtown Jamaica, a dense commercial center that is New York City’s busiest bus hub and the convergence of subway, Long Island Rail Road, and JFK Air Trains. Whereas Jamaica Avenue is primarily a commercial corridor with one and two-story shops and the occasional office tower, Liberty Avenue is home to single-story warehouses, auto repair businesses, parking lots, and vacant land. Merrick Boulevard is more of a mix of the two.</p>'
+      +'<p>There is only one substantial park in the vicinity (Rufus King Park), and the community district ranks <a href="https://www.ny4p.org/client-uploads/pdf/District-Profiles-2021/NY4P-Profiles_QN12.pdf" target="_blank">49th out of 59 community districts</a> citywide in terms of available park space, with just 1.1 acres per thousand residents compared with the median citywide ratio of 1.5. Each corridor also lacks mature and consistent tree canopy, a topic we will explore later in greater detail.</p>',
       location: {
         center: [-73.80246, 40.69182],
         zoom: 13,
         zoomSmall: 12,
       },
-      onChapterEnter: [],
+      onChapterEnter: [
+        { layer: '13-hot-map',
+          opacity: .75,
+        },
+      ],
       onChapterExit: [
         { layer: '13-hot-map',
           opacity: 0,
         },
       ],
-    },
-
-    { id: 'env-05',
-      alignment: 'full',
-      hidden: false,
-      chapterDiv: 
-      '<p>There is only one substantial park in the vicinity (Rufus King Park), and the community district ranks <a href="https://www.ny4p.org/client-uploads/pdf/District-Profiles-2021/NY4P-Profiles_QN12.pdf" target="_blank">49th out of 59 community districts</a> citywide in terms of available park space, with just 1.1 acres per thousand residents compared with the median citywide ratio of 1.5. Each corridor also lacks mature and consistent tree canopy, a topic we will explore later in greater detail.</p>',
-      location: {
-        center: [-73.80366, 40.70373],
-        zoom: 16,
-        zoomSmall: 15,
-      },
-      onChapterEnter: [
-        { layer: '02-studyArea',
-          opacity: .85,
-        },
-      ],
-      onChapterExit: [],
     },
 
     { id: 'env-06',
@@ -160,16 +147,16 @@ var config = {
         +'<figcaption>Located just two miles apart along Northern Boulevard, these images of the same 95-foot right-of-way demonstrate the difference that trees, road diets, building densities, and land uses play in terms of the arterial experience. Photos: Kade Van Meeteren.</figcaption></figure>'
       +'<p>As Jane Jacobs observed in <i>The Death and Life of Great American Cities</i>, the scale of buildings and the types of uses on a block have a major impact on the pedestrian experience. She noted that single use areas became “border vacuums,” deadened places that form barriers and create "blighted" zones in surrounding blocks. Automobile-centric land uses are the epitome, though their microclimates (like physical heat and pollution) can have the same deleterious effect in terms of street avoidance.</p>',
       location: {
-        center: [-73.90399, 40.75359],
-        zoom: 16,
-        zoomSmall: 15,
+        center: [-73.92362, 40.75391],
+        zoom: 13.2,
+        zoomSmall: 12,
       },
-      onChapterEnter: [],
-      onChapterExit: [
+      onChapterEnter: [
         { layer: '02-studyArea',
-          opacity: 0,
+          opacity: 0.35,
         },
       ],
+      onChapterExit: [],
     },
 
     { id: "env-07",
@@ -194,49 +181,34 @@ var config = {
       onChapterExit: [],
     },
 
-    { id: 'env-08',
+    { id: 'env-09',
       alignment: 'left',
       hidden: false,
       chapterDiv: 
       '<p>Like heat, nuisance and stormwater-related flooding are becoming more frequent and intense in New York City. According to the <a href="https://nyaspubs.onlinelibrary.wiley.com/doi/10.1111/nyas.15116" target="_blank">New York City Panel on Climate Change</a>, average precipitation is expected to increase by four to 11 percent between now and 2050.</p>'
       +'<p>Hurricane Sandy was a wakeup call to protect the city’s coasts from storm surge, but recent and unprecedented cloudburst events have revealed the flooding vulnerability of the entire city, <a href="https://www.nyc.gov/site/dep/whats-new/resilient-nyc-partners.page" target="_blank">more than 70 percent of which</a> is impervious. During Hurricane Ida in 2021, some areas of the city received 3.75 inches per hour&mdash;more than twice the maximum sewer capacity.</p>'
-      +'<br><dl><dt><strong>Legend: Extreme Stormwater Flooding Scenario with 2080s Sea Level Rise (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</strong></dt>'        
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Nuisance Flooding</dd></dl>',
+      +'<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors when tidal flooding is factored in.</p>'
+      +'<br><dl><dt><strong>Legend</strong></dt>'        
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Nuisance flooding in an extreme stormwater flooding scenario (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</dd>'
+        +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads in Environmental Justice (EJ) Study Area</dd></dl>',
       location: {
-        center: [-74, 40.73800],
-        zoom: 10.3,
-        zoomSmall: 7,
-      },
-      onChapterEnter: [
-        { layer: '18-flood2',
-          opacity: 1,
-        },
-        { layer: '19-stroads-flood',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [],
-    },
-
-    { id: 'env-09',
-      alignment: 'left',
-      hidden: false,
-      chapterDiv: 
-      '<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors.</p>'
-      +'<br><dl><dt><strong>Legend: Extreme Stormwater Flooding Scenario with 2080s Sea Level Rise (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</strong></dt>'        
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Nuisance Flooding</dd>'
-        +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads where at least 20% of right of way is affected in extreme scenarios</dd></dl>',
-      location: {
-        center: [-74.00316, 40.70554],
-        zoom: 11,
+        center: [-74.01216, 40.72617],
+        zoom: 10.5,
         zoomSmall: 8,
       },
       onChapterEnter: [
-        { layer: '19-stroads-flood',
+        { layer: '02-studyArea',
+          opacity: 1,
+        },
+        { layer: '18-flood2',
           opacity: 1,
         },
       ],
-      onChapterExit: [],
+      onChapterExit: [
+        { layer: '02-studyArea',
+          opacity: 0,
+        },
+      ],
     },
     
     { id: 'env-10',
@@ -246,11 +218,11 @@ var config = {
       '<p>The stakes are particularly high for stroads because they are such important transportation corridors. Highly trafficked stroads and large surface parking areas generate significant amounts of pollutants (such as metals, hydrocarbons, bacteria, and excess sediments) that run off and pollute the region’s water bodies because they are unable to be absorbed into impermeable ground. The impact is amplified in New York City, where the right-of-way comprises roughly 28 percent of all combined sewer overflow drainage areas, more area than any other type of City-managed land.</p>'
       +'<figure>'
         +'<img src="./images/wikimedia-flatbush-ave.jpg" alt="Cars navigate completely flooded road near Prospect Park.">'
-        +'<figcaption>Flatbush Avenue was inundated with floodwater caused by Tropical Storm Ophelia in 2023. Photo: Wikimedia Commons, Wil540 art.</figcaption></figure>',
+        +'<figcaption>The intersection of Coney Island and Parkside Avenues was inundated with flooding caused by Tropical Storm Ophelia in 2023. Photo: Wikimedia Commons, Wil540 art.</figcaption></figure>',
       location: {
-        center: [-73.95867, 40.64335],
-        zoom: 11,
-        zoomSmall: 8,
+        center: [-73.97480, 40.6511985],
+        zoom: 14.5,
+        zoomSmall: 11.5,
       },
       onChapterEnter: [],
       onChapterExit: [],
@@ -266,9 +238,9 @@ var config = {
       +'<p>The City has been installing cloudburst infrastructure in areas that are within priority sewer sheds, socially vulnerable neighborhoods, and where interagency infrastructure projects and ecological connectivity priorities align. According to the Department of Environmental Protection (DEP), about 90 percent of green infrastructure has been installed in environmental justice neighborhoods.</p>'
       +'<p>There are several places where the City has taken a corridor approach to green infrastructure investment. Last year, for example, DEP, along with the Department of Transportation, Department of Design and Construction, MOCEJ, Councilmember Joann Ariola, and the New York State Office of Resilient Homes and Communities, completed a $16.6 million infrastructure project that rebuilt Beach 108th Street in Rockaway, Queens. While Beach 108th Street is not a major arterial corridor, the project nonetheless demonstrates the potential for wholesale improvement when interagency priorities and resources align. Beach 108th Street now has new trees, sidewalks, benches, bike lanes, storm sewers, catch basins, and porous pavement that can absorb nearly 1.3 million gallons of stormwater into the ground each year.</p>',
       location: {
-        center: [-73.829391, 40.581169],
-        zoom: 13,
-        zoomSmall: 12,
+        center: [-73.83463, 40.5835498],
+        zoom: 14.5,
+        zoomSmall: 11.5,
       },
       onChapterEnter: [
         { layer: '02-studyArea',
@@ -277,9 +249,6 @@ var config = {
       ],
       onChapterExit: [
         { layer: '18-flood2',
-          opacity: 0,
-        },
-        { layer: '19-stroads-flood',
           opacity: 0,
         },
       ],
@@ -311,7 +280,7 @@ var config = {
       alignment: "left",
       hidden: false,
       chapterDiv:
-      '<p class="p-wide">There are dozens of stroads that extend for miles in each borough with little tree canopy, such as Boston Road, Queens Boulevard, and Utica Avenue. In areas like East Flatbush, which lacks tree canopy compared with other neighborhoods, the absence of vegetation along streets like Utica Avenue has a greater local impact. Taking a closer look at two examples helps illustrate these disparities.</p>'
+      '<p>There are dozens of stroads that extend for miles in each borough with little tree canopy, such as Boston Road, Queens Boulevard, and Utica Avenue. In areas like East Flatbush, which lacks tree canopy compared with other neighborhoods, the absence of vegetation along streets like Utica Avenue has a greater local impact. Taking a closer look at two examples helps illustrate these disparities.</p>'
       +'<br><dl><dt><strong>Legend</strong></dt>'
       +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
       location: {
@@ -415,10 +384,9 @@ var config = {
       chapterDiv: 
       '<p>The city’s most recent street tree census (in 2015) notes that there is an opportunity to plant approximately 250,000 additional street trees citywide, an almost 40 percent increase from the total that was counted. To its credit, the city has been making strides, with citywide street tree canopy <a href="https://storymaps.arcgis.com/stories/63010002df2c40deab071abe68157131" target="_blank">increasing 3.5%</a> between 2010 and 2017.</p>'
       +'<p>However, the census also suggests that siting constraints alone do not explain why wide swaths of these corridors are devoid of anything green. Policy priorities, interagency coordination, and budget issues are also at play.</p>'
-      +'<figure>'
-        +'<div class="row">' 
-          +'<div class="column-grid"><img src="./images/boston-rd-4.jpg" alt="Underutilized sidewalk"></div>'
-          +'<div class="column-grid"><img src="./images/atlantic-ave-8.jpg" alt="Underutilized space under elevated tracks"></div></div>'
+      +'<figure>' 
+          +'<img src="./images/boston-rd-4.jpg" alt="Underutilized sidewalk"><br><br>'
+          +'<img src="./images/atlantic-ave-8.jpg" alt="Underutilized space under elevated tracks">'
           +'<figcaption>Expansive concrete sidewalks and medians beg for creative greening and programming strategies to enliven them. Vegetation could be pervasive but is limited and piecemeal due to maintenance challenges and siting constraints. Photos: Kade Van Meeteren and Stephen Albonesi.</figcaption></figure>'
       +'<p>In our next post, we will inventory pertinent plans, pilots, legislation, and visions by governmental and non-governmental actors to understand where and how they can be leveraged for greater impact. While expanding the urban forest is critical, these strategies must also be utilized for creative solutions where street tree planting is not possible.</p>',
       location: {
