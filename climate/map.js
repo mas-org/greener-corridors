@@ -303,6 +303,21 @@ map.on('load', function () {
           ['step', ['get', 'pct_flood_20'], 'transparent', 1, '#f35d17']],
         'fill-opacity': 0}
     });
+    map.addLayer(
+      { id: '20-flood-rockaways',
+        source: {
+          type: 'geojson',
+          data: './data/dep_stormwater_rockaways.geojson'},
+        type: 'fill',
+        paint: {
+          'fill-color': [
+            'interpolate', ['linear'], 
+            ['get', 'Flooding_Category'],
+            1, '#00A9E6', 
+            2, '#73DFFF',
+            3, '#004C73'],
+          'fill-opacity': 0}
+      });
 
   scroller
     .setup({

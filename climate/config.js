@@ -189,7 +189,7 @@ var config = {
       +'<p>Hurricane Sandy was a wakeup call to protect the city’s coasts from storm surge, but recent and unprecedented cloudburst events have revealed the flooding vulnerability of the entire city, <a href="https://www.nyc.gov/site/dep/whats-new/resilient-nyc-partners.page" target="_blank">more than 70 percent of which</a> is impervious. During Hurricane Ida in 2021, some areas of the city received 3.75 inches per hour&mdash;more than twice the maximum sewer capacity.</p>'
       +'<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors when tidal flooding is factored in.</p>'
       +'<br><dl><dt><strong>Legend</strong></dt>'        
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Nuisance flooding in an extreme stormwater flooding scenario (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</dd>'
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Nuisance flooding (4" to 1 foot) in an extreme stormwater flooding scenario (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</dd>'
         +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads in Environmental Justice (EJ) Study Area</dd></dl>',
       location: {
         center: [-74.01216, 40.72617],
@@ -224,8 +224,19 @@ var config = {
         zoom: 14.5,
         zoomSmall: 11.5,
       },
-      onChapterEnter: [],
-      onChapterExit: [],
+      onChapterEnter: [
+        { layer: '18-flood2',
+          opacity: .75,
+        },
+        { layer: '20-flood-rockaways',
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [
+        { layer: '18-flood2',
+          opacity: 0,
+        },
+      ],
     },
 
     { id: 'env-11',
@@ -236,19 +247,26 @@ var config = {
         +'<img src="./images/beach-108.jpg" alt="Beach 108th Street in Rockaway, Queens.">'
         +'<figcaption>Beach 108th Street in Rockaway, Queens, whose transportation and stormwater infrastructure was rebuilt as part of an interagency effort. Photo: New York City Department of Design and Construction.</figcaption></figure>'
       +'<p>The City has been installing cloudburst infrastructure in areas that are within priority sewer sheds, socially vulnerable neighborhoods, and where interagency infrastructure projects and ecological connectivity priorities align. According to the Department of Environmental Protection (DEP), about 90 percent of green infrastructure has been installed in environmental justice neighborhoods.</p>'
-      +'<p>There are several places where the City has taken a corridor approach to green infrastructure investment. Last year, for example, DEP, along with the Department of Transportation, Department of Design and Construction, MOCEJ, Councilmember Joann Ariola, and the New York State Office of Resilient Homes and Communities, completed a $16.6 million infrastructure project that rebuilt Beach 108th Street in Rockaway, Queens. While Beach 108th Street is not a major arterial corridor, the project nonetheless demonstrates the potential for wholesale improvement when interagency priorities and resources align. Beach 108th Street now has new trees, sidewalks, benches, bike lanes, storm sewers, catch basins, and porous pavement that can absorb nearly 1.3 million gallons of stormwater into the ground each year.</p>',
+      +'<p>There are several places where the City has taken a corridor approach to green infrastructure investment. Last year, for example, DEP, along with the Department of Transportation, Department of Design and Construction, MOCEJ, Councilmember Joann Ariola, and the New York State Office of Resilient Homes and Communities, completed a $16.6 million infrastructure project that rebuilt Beach 108th Street in Rockaway, Queens. While Beach 108th Street is not a major arterial corridor, the project nonetheless demonstrates the potential for wholesale improvement when interagency priorities and resources align. Beach 108th Street now has new trees, sidewalks, benches, bike lanes, storm sewers, catch basins, and porous pavement that can absorb nearly 1.3 million gallons of stormwater into the ground each year.</p>'
+      +'<br><dl><dt><strong>Legend</strong></dt>'        
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Nuisance flooding (4" to 1 foot) in an extreme stormwater flooding scenario</dd>'
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#73DFFF" /></svg>Deep and contiguous flooding (&ge; 1 foot)</dd>'
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#004C73" /></svg>Future high tides with 2080 Sea Level Rise</dd></dl>',
       location: {
         center: [-73.83463, 40.5835498],
-        zoom: 14.5,
+        zoom: 14,
         zoomSmall: 11.5,
       },
       onChapterEnter: [
-        { layer: '02-studyArea',
-          opacity: 0,
+        { layer: '20-flood-rockaways',
+          opacity: .5,
         },
       ],
       onChapterExit: [
         { layer: '18-flood2',
+          opacity: 0,
+        },
+        { layer: '20-flood-rockaways',
           opacity: 0,
         },
       ],
@@ -316,7 +334,7 @@ var config = {
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
       location: {
         center: [-73.91998, 40.65444],
-        zoom: 13,
+        zoom: 12.9,
         zoomSmall: 12,
       },
       onChapterEnter: [
@@ -346,7 +364,7 @@ var config = {
         +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#008000" /></svg>Tree Canopy within 100 ft of Stroad</dd></dl>',
       location: {
         center: [-73.9562715, 40.6700859],
-        zoom: 13,
+        zoom: 12.9,
         zoomSmall: 12,
       },
       onChapterEnter: [
