@@ -254,14 +254,23 @@ mark {
   .p-wide {
     padding: 0;
   }
+  .p-narrow {
+    margin-right: 0%;
+  }
   .p-header {
     margin: 0;
   }
   dl, dt, dd, figcaption {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 0.95em;
-  line-height: 1.3;
-  margin: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.3;
+    margin: 0;
+  }
+  .tab {
+    max-width: 100%;
+  }
+  .tabcontent {
+    max-width: 100%;
   }
 }
 
