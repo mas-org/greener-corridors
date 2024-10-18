@@ -199,7 +199,37 @@ mark {
   border-radius: 5px;
   margin: 0;
 }
-  
+
+/*Toggle Tabs*/
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  max-width: 80%;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ffcc00;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-width: 80%;
+}
+
 @media (max-width: 500px) {
   #features {
     width: 90vw;
