@@ -169,46 +169,32 @@ var config = {
         +'<img src="./images/jamaica-2.jpg" alt="Archer Avenue bus lanes">'
         +'<figcaption>Downtown Jamaica has more than 45 different bus routes along corridors like Archer Avenue where heat is omnipresent. Photo: Rawnak Zaman.</figcaption></figure>',
       location: {
-        center: [-74, 40.73800],
+        center: [-73.97480, 40.6511985],
         zoom: 10.3,
         zoomSmall: 7,
       },
-      onChapterEnter: [
-        { layer: '18-flood2',
-          opacity: 0,
-        },
-      ],
+      onChapterEnter: [],
       onChapterExit: [],
     },
 
     { id: 'env-09',
-      alignment: 'left',
+      alignment: 'centered',
       hidden: false,
       chapterDiv: 
       '<p>Like heat, nuisance and stormwater-related flooding are becoming more frequent and intense in New York City. According to the <a href="https://nyaspubs.onlinelibrary.wiley.com/doi/10.1111/nyas.15116" target="_blank">New York City Panel on Climate Change</a>, average precipitation is expected to increase by four to 11 percent between now and 2050.</p>'
       +'<p>Hurricane Sandy was a wakeup call to protect the city’s coasts from storm surge, but recent and unprecedented cloudburst events have revealed the flooding vulnerability of the entire city, <a href="https://www.nyc.gov/site/dep/whats-new/resilient-nyc-partners.page" target="_blank">more than 70 percent of which</a> is impervious. During Hurricane Ida in 2021, some areas of the city received 3.75 inches per hour&mdash;more than twice the maximum sewer capacity.</p>'
-      +'<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors when tidal flooding is factored in.</p>'
-      +'<br><dl><dt><strong>Legend</strong></dt>'        
-        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Nuisance flooding (4" to 1 foot) in an extreme stormwater flooding scenario (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</dd>'
-        +'<dd><svg width="17" height="12"><line x1="2" y1="0" x2="10" y2="10" style="stroke:#f35d17;stroke-width:2" /></svg>Stroads in Environmental Justice (EJ) Study Area</dd></dl>',
+      +'<p>Stormwater flooding projections physically align with the city’s stroads and other streets. Every borough has a stroad where more than 20% of the right-of-way would be underwater in an extreme stormwater flooding event on the magnitude of Hurricane Ida. They include corridors like Flatlands Avenue in southeast Brooklyn, Bartow Avenue in Co-op City, and Targee Street in Staten Island. Unsurprisingly, stroads in low-lying coastal areas like Coney Island and the Rockaways are vastly more flood prone than other corridors when tidal flooding is factored in.</p>',
       location: {
-        center: [-74.01216, 40.72617],
-        zoom: 10.5,
-        zoomSmall: 8,
+        center: [-73.97480, 40.6511985],
+        zoom: 10.3,
+        zoomSmall: 7,
       },
       onChapterEnter: [
-        { layer: '02-studyArea',
-          opacity: 1,
-        },
-        { layer: '18-flood2',
-          opacity: 1,
-        },
-      ],
-      onChapterExit: [
-        { layer: '02-studyArea',
+        { layer: '18-flood-prospect',
           opacity: 0,
         },
       ],
+      onChapterExit: [],
     },
     
     { id: 'env-10',
@@ -216,16 +202,18 @@ var config = {
       hidden: false,
       chapterDiv: 
       '<p>The stakes are particularly high for stroads because they are such important transportation corridors. Highly trafficked stroads and large surface parking areas generate significant amounts of pollutants (such as metals, hydrocarbons, bacteria, and excess sediments) that run off and pollute the region’s water bodies because they are unable to be absorbed into impermeable ground. The impact is amplified in New York City, where the right-of-way comprises roughly 28 percent of all combined sewer overflow drainage areas, more area than any other type of City-managed land.</p>'
-      +'<figure>'
+      +'<br><dl><dt><strong>Legend</strong></dt>'        
+        +'<dd><svg width="17" height="12"><rect width="10" height="10" x="1" y="1" style="fill:#00A9E6" /></svg>Nuisance flooding (4" to 1 foot) in an extreme stormwater flooding scenario (<a href="https://experience.arcgis.com/experience/e83a49daef8a472da4a7e34dc25ac445/" target="_blank">NYC DEP</a>)</dd>'
+      +'<br><figure>'
         +'<img src="./images/wikimedia-flatbush-ave.jpg" alt="Cars navigate completely flooded road near Prospect Park.">'
         +'<figcaption>The intersection of Coney Island and Parkside Avenues was inundated with flooding caused by Tropical Storm Ophelia in 2023. Photo: Wikimedia Commons, Wil540 art.</figcaption></figure>',
       location: {
-        center: [-73.97480, 40.6511985],
+        center: [-73.97410, 40.65044],
         zoom: 14.5,
-        zoomSmall: 11.5,
+        zoomSmall: 14.5,
       },
       onChapterEnter: [
-        { layer: '18-flood2',
+        { layer: '18-flood-prospect',
           opacity: .75,
         },
         { layer: '20-flood-rockaways',
@@ -233,7 +221,7 @@ var config = {
         },
       ],
       onChapterExit: [
-        { layer: '18-flood2',
+        { layer: '18-flood-prospect',
           opacity: 0,
         },
       ],
@@ -255,7 +243,7 @@ var config = {
       location: {
         center: [-73.83463, 40.5835498],
         zoom: 14,
-        zoomSmall: 11.5,
+        zoomSmall: 14,
       },
       onChapterEnter: [
         { layer: '20-flood-rockaways',
@@ -263,9 +251,6 @@ var config = {
         },
       ],
       onChapterExit: [
-        { layer: '18-flood2',
-          opacity: 0,
-        },
         { layer: '20-flood-rockaways',
           opacity: 0,
         },
@@ -304,7 +289,7 @@ var config = {
       location: {
         center: [-73.93707, 40.66732],
         zoom: 12.5,
-        zoomSmall: 11.5,
+        zoomSmall: 12.5,
       },
       onChapterEnter: [
         { layer: '14-canopy',
@@ -335,7 +320,7 @@ var config = {
       location: {
         center: [-73.91998, 40.65444],
         zoom: 12.9,
-        zoomSmall: 12,
+        zoomSmall: 12.5,
       },
       onChapterEnter: [
         { layer: '15-canopy-linden',
@@ -365,7 +350,7 @@ var config = {
       location: {
         center: [-73.9562715, 40.6700859],
         zoom: 12.9,
-        zoomSmall: 12,
+        zoomSmall: 12.5,
       },
       onChapterEnter: [
         { layer: '16-canopy-eastern',

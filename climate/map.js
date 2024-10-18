@@ -277,10 +277,10 @@ map.on('load', function () {
     });
 
   map.addLayer(
-    { id: '18-flood2',
+    { id: '18-flood-prospect',
       source: {
         type: 'geojson',
-        data: './data/nuisance-flood.geojson'},
+        data: './data/dep_nuisance_prospect.geojson'},
       buffer: 0,
       minzoom: 7,
       maxzoom: 15,
@@ -289,35 +289,22 @@ map.on('load', function () {
         'fill-color': '#00A9E6',
         'fill-opacity': 0}
     });
+    
   map.addLayer(
-    { id: '19-stroads-flood',
+    { id: '20-flood-rockaways',
       source: {
         type: 'geojson',
-        data: '../data/stroads.geojson'},
+        data: './data/dep_stormwater_rockaways.geojson'},
       type: 'fill',
       paint: {
         'fill-color': [
-          'case',
-          ['==', ['get', 'pct_flood_20'], null],
-          'transparent',
-          ['step', ['get', 'pct_flood_20'], 'transparent', 1, '#f35d17']],
+          'interpolate', ['linear'], 
+          ['get', 'Flooding_Category'],
+          1, '#00A9E6', 
+          2, '#73DFFF',
+          3, '#004C73'],
         'fill-opacity': 0}
     });
-    map.addLayer(
-      { id: '20-flood-rockaways',
-        source: {
-          type: 'geojson',
-          data: './data/dep_stormwater_rockaways.geojson'},
-        type: 'fill',
-        paint: {
-          'fill-color': [
-            'interpolate', ['linear'], 
-            ['get', 'Flooding_Category'],
-            1, '#00A9E6', 
-            2, '#73DFFF',
-            3, '#004C73'],
-          'fill-opacity': 0}
-      });
 
   scroller
     .setup({
