@@ -342,7 +342,8 @@ var config = {
       hidden: false,
       chapterDiv: 
       '<figure>'
-        +'<img src="./images/eastern-pkwy.png" alt="Verdant roadway">'
+        +'<img src="./images/eastern-pkwy-1.jpg" alt="Verdant roadway"><br><br>'
+        +'<img src="./images/eastern-pkwy-2.jpg" alt="Verdant roadway">'
         +'<figcaption>Eastern Parkway between Bedford and Franklin Avenues. In 2024, the block was named second greenest in Brooklyn by the Brooklyn Botanic Garden. Photo: Google Street View, 2022.</figcaption></figure>'
       +'<p>Eastern Parkway, located just one mile north, is a completely different story despite handling a similar amount of traffic as Linden Boulevard. Designed by Frederick Law Olmstead and Calvert Vaux in the late-1800’s to connect Brooklyn neighborhoods (including Crown Heights and East New York, both EJ areas today) to Prospect Park, most of the four-mile, primarily residential corridor features lush tree-lined medians, bike paths, and benches. While the right of way is up to 40 feet wider than Linden Boulevard, the street and its adjacent land have twice as much tree canopy coverage and much lower surface temperatures. And all of this rests above two of the busiest subway lines in the city.</p>'
       +'<br><dl><dt><strong>Legend</strong></dt>'

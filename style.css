@@ -281,6 +281,9 @@ mark {
     margin-top: 0.5em;
     color: black;
   }
+  .p-narrow {
+    margin-right: 50%;
+  }
 }
 
 /*Fix issue on mobile browser where scroll breaks*/
