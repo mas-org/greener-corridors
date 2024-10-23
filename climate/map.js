@@ -280,13 +280,17 @@ map.on('load', function () {
     { id: '18-flood-prospect',
       source: {
         type: 'geojson',
-        data: './data/dep_nuisance_prospect.geojson'},
+        data: './data/dep_stormwater_prospect.geojson'},
       buffer: 0,
       minzoom: 7,
       maxzoom: 15,
       type: 'fill',
       paint: {
-        'fill-color': '#00A9E6',
+        'fill-color': [
+          'interpolate', ['linear'], 
+          ['get', 'Flooding_Category'],
+          1, '#73DFFF', 
+          2, '#00A9E6'],
         'fill-opacity': 0}
     });
     
@@ -300,8 +304,8 @@ map.on('load', function () {
         'fill-color': [
           'interpolate', ['linear'], 
           ['get', 'Flooding_Category'],
-          1, '#00A9E6', 
-          2, '#73DFFF',
+          1, '#73DFFF', 
+          2, '#00A9E6',
           3, '#004C73'],
         'fill-opacity': 0}
     });
