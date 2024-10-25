@@ -582,7 +582,7 @@ var config = {
       alignment: 'centered',
       hidden: false,
       chapterDiv: '<p>Yet even with ongoing and proposed improvements, these corridors are not being optimized to their full potential, with mobility being just one focus area. There is an opportunity to make stroads significantly greener in terms of trees and vegetation and to encourage more sustainable development. The need to leverage them is all the more urgent given the climate crisis and transportation’s role as the largest contributor to greenhouse gas emissions in the country. For those who have the choice of how to travel, dangerous, unpleasant, and car-oriented street conditions reinforce a vicious cycle where driving becomes the preferred option. In Part 2 of this storymap, we explore issues of heat and flooding and opportunities to make these corridors more climate resilient.</p>'
-      +'<h1 style="text-align:left"><a href="https://mas-org.github.io/greener-corridors/climate/">Go to Part 3</a></h1><br>'
+      +'<h1 style="text-align:right"><a href="https://mas-org.github.io/greener-corridors/climate/">Go to Part 3</a></h1><br>'
       +'<figure>'
         +'<img src="./images/boston-rd-1.jpg" alt="Scooters left astride a sidewalk in front of an automotive business" width=100%>'
         +'<figcaption>The one-year East Bronx Shared E-Scooter Pilot expanded mobility options to East Bronx residents beginning in the summer 2021. Since then, more than 3.4 million trips have been taken. Boston Road was one of several thoroughfares that reported high scooter traffic volumes, suggesting the need for safer, designated lanes for micromobility users.</figcaption></figure>',
