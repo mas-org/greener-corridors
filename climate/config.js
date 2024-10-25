@@ -395,8 +395,8 @@ var config = {
           +'<img src="./images/boston-rd-4.jpg" alt="Underutilized sidewalk"><br><br>'
           +'<img src="./images/atlantic-ave-8.jpg" alt="Underutilized space under elevated tracks">'
           +'<figcaption>Expansive concrete sidewalks and medians beg for creative greening and programming strategies to enliven them. Vegetation could be pervasive but is limited and piecemeal due to maintenance challenges and siting constraints. Photos: Kade Van Meeteren and Stephen Albonesi.</figcaption></figure>'
-      +'<p>In our next post, we will inventory pertinent plans, pilots, legislation, and visions by governmental and non-governmental actors to understand where and how they can be leveraged for greater impact. While expanding the urban forest is critical, these strategies must also be utilized for creative solutions where street tree planting is not possible.</p>',
-      +'<h1 style="text-align:right"><a href="https://mas-org.github.io/greener-corridors/policy-map/">Go to Part 4</a></h1><br>'
+      +'<p>In our next post, we will inventory pertinent plans, pilots, legislation, and visions by governmental and non-governmental actors to understand where and how they can be leveraged for greater impact. While expanding the urban forest is critical, these strategies must also be utilized for creative solutions where street tree planting is not possible.</p>'
+      +'<h1 style="text-align:right"><a href="https://mas-org.github.io/greener-corridors/policy-map/">Go to Part 4</a></h1><br>',
       location: {
         center: [-74, 40.73800],
         zoom: 10.2,
