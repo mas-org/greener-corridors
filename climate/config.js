@@ -8,7 +8,7 @@ let subtitleDiv =
 let bylineDiv = 
 '<p class="p-header"><a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">Greener Corridors</a> examines New York City’s largest arterial thoroughfares as opportunities to create more livable, efficient, and green public spaces. These corridors are sometimes referred to as “<a href="https://www.planetizen.com/news/2024/05/129032-stroads-worst-both-worlds" target="_blank">stroads</a>” in urban planning circles because they contain features commonly associated with streets (such as places where people live and shop) as well as roads (such as high-speed traffic lanes designed to quickly move large volumes of through-traffic. This street-road mix is often incompatible, and stroads are frequently criticized for being inefficient, unappealing, dangerously designed, and too focused on through-movement at the expense of walkable environments that foster a sense of place. This storymap series takes a deeper look at the spatial relationship between these thoroughfares and mobility, sustainability, and land use issues to better understand where and how these corridors might be improved.</p><br>'
 +'<div class="row">' 
-  +'<div class="column"><h1><a href="https://www.mas.org/news/introducing-greener-corridors/">1. Introduction</a></h1></div>'
+  +'<div class="column"><h1><a href="https://www.mas.org/news/introducing-greener-corridors/" target="_blank">1. Introduction</a></h1></div>'
   +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/built-for-auto/">2. Mobility</a></h1></div>'
   +'<div class="column"><h1><mark>3. Climate</mark></h1></div>'
   +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/policy-map/">4. Policy Map</a></h1></div>'
