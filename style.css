@@ -343,6 +343,9 @@ mark {
   .col-text {
     column-count: 1;
   }
+  li {
+    margin-right: 0%;
+  }
 }
 
 @media (min-width: 501px) {
