@@ -272,7 +272,7 @@ mark {
   font-size: 1em;
 }
 
-.active, .collapsible:hover {
+.button-active, .collapsible:hover {
   background-color: #ffcc00;
 }
 
@@ -283,7 +283,7 @@ mark {
   float: right;
   margin-left: 5px;
 }
-.active:after {
+.button-active:after {
   content: "\2212";
 }
 
