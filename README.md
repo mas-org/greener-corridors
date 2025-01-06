@@ -1,9 +1,9 @@
-# greener-corridors
+# The Municipal Art Society's Greener Corridors Initiative
 Greener Corridors for a More Resilient City, a research initiative of The Municipal Art Society of New York, aims to reimagine NYC's major roads with safety and sustainability in mind.
 
 To learn more about the project, please visit https://www.mas.org/initiatives/greener-corridors/.
 
-We're using Github to host our Issues & Opportunities storymap series, which explores the spatial relationships between the roadways in our study and issues of mobility, resiliency, and land use. This file lists the data sources used to build the storymaps.
+We're using Github to host our Issues & Opportunities series, which explores the spatial relationships between the roadways in our study and issues of mobility, resiliency, and land use. This file lists the data sources used to build the storymaps therein.
 
 **Universal**
 
