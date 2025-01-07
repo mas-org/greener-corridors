@@ -6,21 +6,21 @@ let subtitleDiv =
 '<h2>Issues & Opportunities</h2><p></p>';
 
 let bylineDiv = 
-'<p class="p-header"><a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">Greener Corridors</a> examines New York City’s largest arterial thoroughfares as opportunities to create more livable, efficient, and green public spaces. These corridors are sometimes referred to as “<a href="https://www.planetizen.com/news/2024/05/129032-stroads-worst-both-worlds" target="_blank">stroads</a>” in urban planning circles because they contain features commonly associated with streets (such as places where people live and shop) as well as roads with high-speed traffic lanes designed to quickly move large volumes of through-traffic. This street-road mix is often incompatible, and stroads are frequently criticized for being inefficient, unappealing, dangerously designed, and too focused on through-movement at the expense of walkable environments that foster a sense of place. <b>This storymap series takes a deeper look at the spatial relationship between these thoroughfares and mobility, sustainability, and land use issues to better understand where and how these corridors might be improved.</b></p><br>'
-+'<div class="row">' 
-  +'<div class="column"><h1><a href="https://www.mas.org/news/introducing-greener-corridors/" target="_blank">1. Introduction</a></h1></div>'
+'<div class="row">' 
+  +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/intro/">1. Introduction</a></h1></div>'
   +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/built-for-auto/">2. Mobility</a></h1></div>'
   +'<div class="column"><h1><mark>3. Climate</mark></h1></div>'
   +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/policy-map/">4. Policy Map</a></h1></div>'
-  +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/lessons/">5. Case Studies</a></h1></div>'
-  +'</div><br><hr>'
+  +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/lessons/">5. Case Studies</a></h1></div><br><br>'
++'<p class="p-header"><a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">Greener Corridors</a> examines New York City’s largest arterial thoroughfares as opportunities to create more livable, efficient, and green public spaces. These corridors are sometimes referred to as “<a href="https://www.planetizen.com/news/2024/05/129032-stroads-worst-both-worlds" target="_blank">stroads</a>” in urban planning circles because they contain features commonly associated with streets (such as places where people live and shop) as well as roads with high-speed traffic lanes designed to quickly move large volumes of through-traffic. This street-road mix is often incompatible, and stroads are frequently criticized for being inefficient, unappealing, dangerously designed, and too focused on through-movement at the expense of walkable environments that foster a sense of place. <b>This storymap series takes a deeper look at the spatial relationship between these thoroughfares and mobility, sustainability, and land use issues to better understand where and how these corridors might be improved.</b></p>'
++'</div><hr>'
 +'<div class="container">'
   +'<img src="../images/cover03.jpg" alt="Person standing under the shade of a small street tree">'
   +'<div class="top-left"><h1 style="color:black">3. Climate</h1><h2 style="color:black">Islands of Heat</h2></div>'
 +'<figcaption>Boston Road in the Bronx. Photo: Kade Van Meeteren.</figcaption>';
 
 let footerDiv = 
-'<p class="p-footer">Published September 30, 2024/Updated October 23, 2024 by <a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">The Municipal Art Society of New York</a>. Storymap built by <a href="https://github.com/rnzee">@rnzee</a> and <a href="https://github.com/stalbonesi">@salbonesi</a> using <a href="https://github.com/mapbox/storytelling/tree/main" target="_blank">these</a> <a href="https://pointsunknown.nyc" target="_blank">resources</a>. The datasets used in this project are <a href="https://github.com/mas-org/greener-corridors/blob/main/README.md" target="_blank">listed here</a>.</p>';
+'<p class="p-footer">Published September 30, 2024/Updated October 23, 2024 by <a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">The Municipal Art Society of New York</a>. Storymap built by <a href="https://github.com/rnzee">@rnzee</a>, <a href="https://github.com/stalbonesi">@salbonesi</a> & Bhavini Kapur using <a href="https://github.com/mapbox/storytelling/tree/main" target="_blank">these</a> <a href="https://pointsunknown.nyc" target="_blank">resources</a>. The datasets used in this project are <a href="https://github.com/mas-org/greener-corridors/blob/main/README.md" target="_blank">listed here</a>.</p>';
 
 var config = {
   style: 'mapbox://styles/mas-nyc/clyhq3ezb01kh01qrf3jmgr0l',
@@ -316,7 +316,7 @@ var config = {
       chapterDiv: 
       '<figure>'
         +'<img src="./images/linden-blvd.png" alt="Three lane road sandwiched by plain medians with no furnishing">'
-        +'<figcaption>Linden Boulevard. Photo: Google Street View, 2022.</figcaption></figure>'
+        +'<figcaption>Linden Boulevard. Image: Google Street View, 2022.</figcaption></figure>'
       +'<p>The busiest portion of Linden Boulevard stretches about six miles between Ozone Park, Queens and Flatbush, Brooklyn, near the southeast corner of Prospect Park. The highly trafficked thoroughfare primarily goes through lower-income residential areas, and while the westernmost portion narrows to two-lane traffic, the bulk of the thoroughfare consists of 10 combined travel and parking lanes separated by three medians. Where it cuts through East New York, one of the city’s poorest neighborhoods, the corridor experiences significantly higher than average surface temperatures and flooding issues.</p>'
       +'<p>Yet Linden Boulevard’s “sidewalk furnishing zone,” a portion of the sidewalk where most street trees are planted, only contains sporadic trees. The same is true of the corridor’s bare medians, whose total concrete width spans nearly 30 feet in some sections.</p>'
       +'<br><dl><dt><strong>Legend</strong></dt>'

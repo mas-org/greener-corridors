@@ -6,21 +6,21 @@ let subtitleDiv =
 '<h2>Issues & Opportunities</h2><p></p>';
 
 let bylineDiv = 
-'<p class="p-header"><a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">Greener Corridors</a> examines New York City’s largest arterial thoroughfares as opportunities to create more livable, efficient, and green public spaces. These corridors are sometimes referred to as “<a href="https://www.planetizen.com/news/2024/05/129032-stroads-worst-both-worlds" target="_blank">stroads</a>” in urban planning circles because they contain features commonly associated with streets (such as places where people live and shop) as well as roads with high-speed traffic lanes designed to quickly move large volumes of through-traffic. This street-road mix is often incompatible, and stroads are frequently criticized for being inefficient, unappealing, dangerously designed, and too focused on through-movement at the expense of walkable environments that foster a sense of place. <b>This storymap series takes a deeper look at the spatial relationship between these thoroughfares and mobility, sustainability, and land use issues to better understand where and how these corridors might be improved.</b></p><br>'
-+'<div class="row">' 
-  +'<div class="column"><h1><a href="https://www.mas.org/news/introducing-greener-corridors/" target="_blank">1. Introduction</a></h1></div>'
+'<div class="row">' 
+  +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/intro/">1. Introduction</a></h1></div>'
   +'<div class="column"><h1><mark>2. Mobility</mark></h1></div>'
   +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/climate/">3. Climate</a></h1></div>'
   +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/policy-map/">4. Policy Map</a></h1></div>'
-  +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/lessons/">5. Case Studies</a></h1></div>'
-  +'</div><br><hr>'
+  +'<div class="column"><h1><a href="https://mas-org.github.io/greener-corridors/lessons/">5. Case Studies</a></h1></div><br><br>'
+  +'<p class="p-header"><a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">Greener Corridors</a> examines New York City’s largest arterial thoroughfares as opportunities to create more livable, efficient, and green public spaces. These corridors are sometimes referred to as “<a href="https://www.planetizen.com/news/2024/05/129032-stroads-worst-both-worlds" target="_blank">stroads</a>” in urban planning circles because they contain features commonly associated with streets (such as places where people live and shop) as well as roads with high-speed traffic lanes designed to quickly move large volumes of through-traffic. This street-road mix is often incompatible, and stroads are frequently criticized for being inefficient, unappealing, dangerously designed, and too focused on through-movement at the expense of walkable environments that foster a sense of place. <b>This storymap series takes a deeper look at the spatial relationship between these thoroughfares and mobility, sustainability, and land use issues to better understand where and how these corridors might be improved.</b></p>'
+  +'</div><hr>'
 +'<div class="container">'
   +'<img src="../images/cover02.jpg" alt="Cars parked on sidewalk in front of autorepair shop" width=100%>'
   +'<div class="top-left"><h1 style="color:white">2. Mobility</h1><h2 style="color:white">Built for the Automobile</h2></div>'
 +'<figcaption>Atlantic Avenue in Brooklyn. Photo: Kade Van Meeteren.</figcaption>';
 
 let footerDiv = 
-'<p class="p-footer">Published July 24, 2024 by <a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">The Municipal Art Society of New York</a>. Storymap built by <a href="https://github.com/rnzee">@rnzee</a> and <a href="https://github.com/stalbonesi">@salbonesi</a> using <a href="https://github.com/mapbox/storytelling/tree/main" target="_blank">these</a> <a href="https://pointsunknown.nyc" target="_blank">resources</a>. The datasets used in this project are <a href="https://github.com/mas-org/greener-corridors/blob/main/README.md" target="_blank">listed here</a>.</p>';
+'<p class="p-footer">Published July 24, 2024 by <a href="https://www.mas.org/initiatives/greener-corridors/" target="_blank">The Municipal Art Society of New York</a>. Storymap built by <a href="https://github.com/rnzee">@rnzee</a>, <a href="https://github.com/stalbonesi">@salbonesi</a> & Bhavini Kapur using <a href="https://github.com/mapbox/storytelling/tree/main" target="_blank">these</a> <a href="https://pointsunknown.nyc" target="_blank">resources</a>. The datasets used in this project are <a href="https://github.com/mas-org/greener-corridors/blob/main/README.md" target="_blank">listed here</a>.</p>';
 
 var config = {
   style: 'mapbox://styles/mas-nyc/clyhq3ezb01kh01qrf3jmgr0l',
